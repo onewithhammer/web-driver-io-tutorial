@@ -48,13 +48,11 @@ List of technologies I choose:
         IE (Browser and driver)
         Safari (Browser and driver plug-in)
 
-
-
 Tutorial Files:
 
-Tutorial1.js 				- Title Test - Open page and verify title
-LinkTextURL1.js 		- Link Text/URL Test - Verify Link Text and URL
-Copyright1.js 			- Copyright Test - Verify Link Text and URL
-FormFillSubmit1.js 	- Populate Form Fields and Submit
-ShowHideVerify1.js 	- Click Show/Hide Button and Verify Text
+	Tutorial1.js 				- Title Test - Open page and verify title
+	LinkTextURL1.js 		- Link Text/URL Test - Verify Link Text and URL
+	Copyright1.js 			- Copyright Test - Verify Link Text and URL
+	FormFillSubmit1.js 	- Populate Form Fields and Submit
+	ShowHideVerify1.js 	- Click Show/Hide Button and Verify Text
 
