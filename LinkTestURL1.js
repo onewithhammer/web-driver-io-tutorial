@@ -1,4 +1,4 @@
-// Tutorial2.js
+// LinkTestURL.js
 //
 // This is a simple test script that does the following:
 //  open a website
