@@ -1,4 +1,4 @@
-// Tutorial3.js
+// Copyright1.js
 //
 // This is a simple test script that does the following:
 //  open a website
