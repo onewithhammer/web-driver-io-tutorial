@@ -3,8 +3,8 @@
 // This is a simple test script that does the following:
 //  open a website
 //  validate title
-//  set/verify first/last name using promises
-//  set/verify first/last name using callbacks
+//  set/verify first/last name using Promises
+//  set/verify first/last name using Callbacks
 //
 
 // required libraries

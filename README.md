@@ -2,7 +2,8 @@
 
 This is the README for the Web Driver IO Tutorial.
 
-Please see my blog for more information
+Please see my blog for a complete description of the files and much more
+located at:
 
 http://webdriveriotutorial.blogspot.com/
 
