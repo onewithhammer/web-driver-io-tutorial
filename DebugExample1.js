@@ -7,7 +7,7 @@
 //  clicks on "Item 3" -> google
 //  waits for google.com to load
 //
-//  This example is meant to demo how to debug using:
+//  This example shows how to debug using:
 //    console.log()
 //    debug()
 //    getText()
