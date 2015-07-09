@@ -1,13 +1,8 @@
 // Tutorial1.js
 //
-<<<<<<< HEAD
 // This is a simple test script that does the following:
 //  open a website
 //  validate title
-=======
-// This is a simple test script to open a website and
-// validate title.
->>>>>>> b20cdb2b1a35cb2a86fd34a0af1f28188bfb2e09
 //
 
 // required libraries
