@@ -58,8 +58,8 @@ Tutorial Files:
 | Copyright1.js 			| Copyright Test - Verify Link Text and URL
 | FormFillSubmit1.js 	| Populate Form Fields and Submit
 | ShowHideVerify1.js 	| Click Show/Hide Button and Verify Text
-| DynamicBroswer.js   | Dymanically Invoke Different Browsers
+| DynamicBrowser.js   | Dymanically Invoke Different Browsers
 | CallbackPromise.js  | Compares callbacks vs promises
-| DebugExample1.js    | This example shows how to debug.
+| DebugExample1.js    | Example Shows Several Methods on How to Debug
 
 
