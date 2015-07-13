@@ -6,115 +6,215 @@
   <title>Web Driver IO - Tutorial Test Page</title>
  	<!-- Bootstrap core CSS -->
   <link href="js-css/bootstrap.css" rel="stylesheet">
+	<style>
+		td { 
+    	padding: 5px;
+		}
+	</style>
 </head>
 <body>
-<center>
-<h1>Web Driver IO - Tutorial Test Page</h1>
-<div>
-	<h4>This test page is used to demo real working test script examples.
-</div>
-</center>
-
-This web site is used to demo a live website.  Please see the blog article located here for full detials and description.<br><br>
-
-Here is a list of files used to test this web site.
-<table border=1>
-	<thead>
-		<tr>
-			<td align=center>
-				<strong>Description</strong>
-			</td>
-			<td align=center>
-				<strong>Filename</strong>
-			</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>
-				Title Test - Open page and verify title
-			</td>
-			<td>
-				Tutorial1.js
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Link Text/URL Test - Verify Link Text and URL
-			</td>
-			<td>
-				LinkTextURL1.js
-			</td>
-		</tr>
-		</tr>
-		<tr>
-			<td>
-				Copyright Test - Verify Link Text and URL
-			</td>
-			<td>
-				Copyright1.js
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Populate form fields and submit
-			</td>
-			<td>
-				FormFillSubmit1.js
-			</td>
-		</tr>
-		<tr>
-			<td>
-				Click Show/Hide Button and Verify Text 
-			</td>
-			<td>
-				ShowHideVerify1.js
-			</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-Simple list example
-<ul id="mylist">
-	<li>Item 1</li>
-	<li>Item 2</li>
-	<li>
+<div class="container-fluid">
+	<div class="col-md-8 text-center col-md-offset-2">
+		<h1>Web Driver IO - Tutorial Test Page</h1>
 		<div>
-			<div>
-				<a href="http://www.google.com">Item 3</a>
-			</div>
+			<h4>This test page is used to demo real working test script examples.
 		</div>
-	</li>
-	<li><a href="http://tlkeith.com/contact.html">Contact Us</a></li>
-</ul>
-<br>
-Simple Form - Search Form
-<form id="search-form" method="post" action="process.php">
-	First name: <input id="fname" type="text" name="fname"><br>
-  Last name: <input id="lname" type="text" name="lname"><br>
-  <input id="search-submit" type="submit" value="Submit">
-</form>
-<br>
-Button to Show/Hide Element<br>
-<button id="moreinfo" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-  More Info
-</button>
-<div class="collapse" id="collapseExample">
-  <div class="well">
-    Sometimes the best things are hidden!
-  </div>
-</div>
 
-<br>
-<footer>
-	<center>
-		<p id="copyright">Tony Keith - tlkeith.com @ 2015 - All rights reserved.</p>
-		<p>Last Update: <b>07.08.15</b><br><p>
-	</center>
-</footer>
-
-<script src="js-css/jquery.js"></script>
-<script src="js-css/bootstrap.js"></script>
-
+		This web site is used to demo a live website.  It is meant to be simple and plain to demo the code.<br><br>Please see the blog article located here for full detials and description.<br><br>
+		<div class="col-md-8 text-left col-md-offset-2">
+			Here is a list of files used to test this web site.
+			<table cellpadding="10" border="1">
+				<thead>
+				<tr>
+					<td align="center">
+						<strong>Description</strong>
+					</td>
+					<td align="center">
+						<strong>Filename</strong>
+					</td>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Title Test - Open page and verify title
+						</td>
+						<td>
+							Tutorial1.js
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Link Text/URL Test - Verify Link Text and URL
+						</td>
+						<td>
+							LinkTextURL1.js
+						</td>
+					</tr>
+					</tr>
+					<tr>
+						<td>
+							Copyright Test - Verify Link Text and URL
+						</td>
+						<td>
+							Copyright1.js
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Populate form fields and submit
+						</td>
+						<td>
+							FormFillSubmit1.js
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Click Show/Hide Button and Verify Text 
+						</td>
+						<td>
+							ShowHideVerify1.js
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Dymanically Invoke Different Browsers
+						</td>
+						<td>
+							DynamicBrowser.js
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Compares callbacks vs promises
+						</td>
+						<td>
+							CallbackPromise.js
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Example Shows Several Methods on How to Debug
+						</td>
+						<td>
+							DebugExample1.js
+						</td>
+					</tr>
+					<tr>
+						<td>
+							 
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			Simple list example
+			<ul id="mylist">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>
+					<div>
+						<div>
+							<a href="http://www.google.com">Item 3</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="http://tlkeith.com/contact.html">Contact Us</a></li>
+			</ul>
+			<br>
+			Simple Form - Search Form
+			<form id="search-form" method="post" action="process.php">
+				First name: <input id="fname" type="text" name="fname"><br>
+			  Last name: <input id="lname" type="text" name="lname"><br>
+			  <input id="search-submit" type="submit" value="Submit">
+			</form>
+			<br>
+			Button to Show/Hide Element<br>
+			<button id="moreinfo" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			  More Info
+			</button>
+			<div class="collapse" id="collapseExample">
+			  <div class="well">
+			    Sometimes the best things are hidden!
+			  </div>
+			</div>
+			<br>
+			<br>
+			Example form with validation errors (post submit)
+			<div>
+				<ul class="alert alert-danger">
+					<li>Please enter first name</li>
+					<li>Please enter last name</li>
+					<li>Please enter address</li>
+					<li>Please enter city</li>
+					<li>Please enter state</li>
+				</ul>
+			</div>
+			<form id="data-form" method="post" action="">
+				<table>
+					<tr>
+						<td>
+							First Name:
+						</td>
+						<td>
+							<input id="fn" type="text" name="fn" placeholder="Enter first name">
+						</td>
+					</tr>
+					<tr>
+						<td>
+			  			Last Name:
+			  		</td>
+			  		<td>
+			  			<input id="ln" type="text" name="ln" placeholder="Enter last name">
+			  		</td>
+			  	</tr>
+			  	<tr>
+			  		<td>
+			  			Address:
+			  		</td>
+			  		<td>
+			  			<input id="address" type="text" name="address" placeholder="Enter address">
+			  		</td>
+			  	</tr>
+			  	<tr>
+			  		<td>
+			  			City:
+			  		</td>
+			  		<td>
+			  			<input id="city" type="text" name="city" placeholder="Enter city">
+			  		</td>
+					</tr>
+					<tr>
+						<td>
+			  			State:
+			  		</td>
+			  		<td>
+			  			<input id="state" type="text" name="state" placeholder="Enter state">
+			  		</td>
+			  	</tr>
+			  	<tr>
+			  		<td align="center" colspan="2">
+			  			<input id="data-submit" type="submit" value="Submit">
+			  		</td>
+			  	</tr>
+			  </table>
+			</form>
+		</div>
+	</div>
+	<div class="col-md-8 col-md-offset-2">
+		<br>
+		<br>
+		<footer>
+			<center>
+				<p id="copyright">Tony Keith - tlkeith.com @ 2015 - All rights reserved.</p>
+				<p>Last Update: <b>07.13.15</b><br><p>
+			</center>
+		</footer>
+		<script src="js-css/jquery.js"></script>
+		<script src="js-css/bootstrap.js"></script>
+	</div>
 </body>
 </html>
