@@ -28,8 +28,7 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
   it('should be load correct page and title', function () {
     // load page, then call function()
     return driver
-      //.url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
-      .url('file:///Users/tkeith/Testing/Tutorial/HTML/WebDriverIOTutorialTest.html')
+      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
       // get title, then pass title to function()
       .getTitle().then(function (title) {
         // verify title
@@ -51,7 +50,8 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
   // Verify Copyright text using xpath as element selector
   it('should contain Copyright text', function () {
     return driver
-      .getText("//footer/center/p").then(function (link) {
+      // use p[1] since there more than on <p> tag
+      .getText("//footer/center/p[1]").then(function (link) {
         console.log('Copyright found: ' + link);
         (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
       });
