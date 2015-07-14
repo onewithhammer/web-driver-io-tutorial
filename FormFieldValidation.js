@@ -24,7 +24,8 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
     // load the driver for browser
     driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
 
-    // bind the command
+    // bind the commands
+    driver.addCommand('verifyFirstNameError', common.verifyFirstNameCheckError.bind(driver));
     driver.addCommand('verifyLastNameError', common.verifyLastNameCheckError.bind(driver));
 
     driver.init(done);
@@ -44,8 +45,36 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
       });
   });
 
-  it('should contain last name error', function (done) {
-    driver.verifyLastNameError(2).call(done);
+  it('should contain 2 errors: first/last name', function () {
+    // call the reusable function
+    driver
+      .verifyFirstNameError(1)
+      .verifyLastNameError(2);
+  });
+
+  it('should contain 5 errors: first/last/address/city/state', function () {
+
+    return driver
+     .getText("//ul[@class='alert alert-danger']/li[1]").then(function (e) {
+        console.log('Error found: ' + e);
+        (e).should.be.equal('Please enter first name');
+      })
+      .getText("//ul[@class='alert alert-danger']/li[2]").then(function (e) {
+        console.log('Error found: ' + e);
+        (e).should.be.equal('Please enter last name');
+      })
+      .getText("//ul[@class='alert alert-danger']/li[3]").then(function (e) {
+        console.log('Error found: ' + e);
+        (e).should.be.equal('Please enter address');
+      })
+      .getText("//ul[@class='alert alert-danger']/li[4]").then(function (e) {
+        console.log('Error found: ' + e);
+        (e).should.be.equal('Please enter city');
+      })
+      .getText("//ul[@class='alert alert-danger']/li[5]").then(function (e) {
+        console.log('Error found: ' + e);
+        (e).should.be.equal('Please enter state');
+      });
   });
 
   // a "hook" to run after all tests in this block
