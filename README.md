@@ -51,15 +51,16 @@ List of technologies I choose:
 
 Tutorial Files:
 
-| Filename            | Description                                     |
-| :-------------------|:------------------------------------------------|
-| Tutorial1.js 				| Title Test - Open page and verify title
-| LinkTextURL1.js 		| Link Text/URL Test - Verify Link Text and URL
-| Copyright1.js 			| Copyright Test - Verify Link Text and URL
-| FormFillSubmit1.js 	| Populate Form Fields and Submit
-| ShowHideVerify1.js 	| Click Show/Hide Button and Verify Text
-| DynamicBrowser.js   | Dymanically Invoke Different Browsers
-| CallbackPromise.js  | Compares callbacks vs promises
-| DebugExample1.js    | Example Shows Several Methods on How to Debug
-
+| Filename             | Description                                     |
+| :---------------------|:------------------------------------------------|
+| Tutorial1.js 				  | Title Test - Open page and verify title
+| LinkTextURL1.js 		  | Link Text/URL Test - Verify Link Text and URL
+| Copyright1.js 			  | Copyright Test - Verify Link Text and URL
+| FormFillSubmit1.js 	  | Populate Form Fields and Submit
+| ShowHideVerify1.js 	  | Click Show/Hide Button and Verify Text
+| DynamicBrowser.js     | Dymanically Invoke Different Browsers
+| CallbackPromise.js    | Compares callbacks vs promises
+| DebugExample1.js      | Example Shows Several Methods on How to Debug
+| FormFieldValidation.js| Example of Validating Errors
+| CommonLib.js          | Example of Reusable Functions (library)
 
