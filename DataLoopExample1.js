@@ -27,8 +27,8 @@ var linkArray = [
 {"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/CallbackPromise.js", "name" : "CallbackPromise.js"},
 {"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/DebugExample1.js", "name" : "DebugExample1.js"},
 {"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/FormFieldValidation.js", "name" : "FormFieldValidation.js"},
-
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/Common/CommonLib.js", "name" : "CommonLib.js"}
+{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/Common/CommonLib.js", "name" : "CommonLib.js"},
+{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/DataLoopExample1.js", "name" : "DataLoopExample1.js"}
 ];
   // set timeout to 30 seconds
 	this.timeout(30000);
@@ -45,9 +45,8 @@ var linkArray = [
   it('should be load correct page and title', function () {
     // load page, then call function()
     return driver
-      //.url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
-      .url('file:///Users/tkeith/Testing/Tutorial/HTML/WebDriverIOTutorialTest.html')
-      // get title, then pass title to function()
+      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
+     // get title, then pass title to function()
       .getTitle().then( function (title) {
         // verify title
         (title).should.be.equal("Web Driver IO - Tutorial Test Page");
@@ -61,7 +60,7 @@ var linkArray = [
     it('should contain text/link then goto page - ' + d.name, function() {
       return driver
       // make sure you are on the starting page
-      .url('file:///Users/tkeith/Testing/Tutorial/HTML/WebDriverIOTutorialTest.html')
+      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
       .getTitle().then( function (title) {
         // verify title
         (title).should.be.equal("Web Driver IO - Tutorial Test Page");
