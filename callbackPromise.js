@@ -1,4 +1,4 @@
-// callbackPromise.js
+// CallbackPromise.js
 //
 // This is a simple test script that does the following:
 //  open a website
