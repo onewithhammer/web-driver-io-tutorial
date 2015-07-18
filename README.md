@@ -59,9 +59,10 @@ Tutorial Files:
 | FormFillSubmit1.js 	  | Populate Form Fields and Submit
 | ShowHideVerify1.js 	  | Click Show/Hide Button and Verify Text
 | DynamicBrowser.js     | Dymanically Invoke Different Browsers
-| CallbackPromise.js    | Compares callbacks vs promises
+| CallbackPromise.js    | Compares callbacks VS promises
 | DebugExample1.js      | Example Shows Several Methods on How to Debug
 | FormFieldValidation.js| Example of Validating Errors
 | CommonLib.js          | Example of Reusable Functions (library)
 | DataLoopExample1.js   | Looping Data to Validate URL Link/Text
+| LinkTextURL2.js       | Link Text/URL Test By Looping Through Elements
 
