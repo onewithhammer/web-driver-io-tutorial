@@ -1,0 +1,25 @@
+{
+  "name": "WebDriverIOTutorial",
+  "version": "0.0.1",
+  "description": "Web Driver IO Tutorial with working web site and examples",
+  "author": "Tony Keith <tony.keith@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onewithhammer/WebDriverIOTutorial"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha *.js"
+  },
+  "keywords": [
+  "webdriverio",
+  "example",
+  "Tutorial"
+  ],
+  "dependencies": {
+    "mocha": "2.2.5",
+    "should": "7.0.1",
+    "webdriverio": "3.0.3"
+  }
+}
+
