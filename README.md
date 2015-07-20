@@ -1,4 +1,5 @@
-# Web Driver IO Tutorial
+Web Driver IO Tutorial
+======================
 
 This is the README for the Web Driver IO Tutorial.
 
@@ -63,6 +64,9 @@ Tutorial Files:
 | DebugExample1.js      | Example Shows Several Methods on How to Debug
 | FormFieldValidation.js| Example of Validating Errors
 | CommonLib.js          | Example of Reusable Functions (library)
-| DataLoopExample1.js   | Looping Data to Validate URL Link/Text
+| DataLoopExample1.js   | Looping Static Data to Validate URL Link/Text
+| DataLoopExample2.js   | Looping Static Data to Populate Form Fields
 | LinkTextURL2.js       | Link Text/URL Test By Looping Through Elements
+
+
 
