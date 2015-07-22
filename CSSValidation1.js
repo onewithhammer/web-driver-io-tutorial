@@ -53,7 +53,7 @@ describe('CSS Property Test for Web Driver IO - Tutorial Test Page Website', fun
 
   it('should contain correct padding in table cell', function () {
     return driver
-      // padding: top right botton left
+      // padding: top right bottom left
       .getCssProperty("//table[@id='filelist']/thead/tr[1]/td[1]", "padding-top").then(function (result) {
         console.log('padding-top found: ' + result.value);
         (result.value).should.be.equal('10px');
