@@ -16,8 +16,12 @@
     ga('send', 'pageview');
   </script>  
 	<style>
+		thead {
+			background-color: #EEEEEE;
+		}
 		td { 
-    	padding: 5px;
+			/* padding: top right botton left */
+    	padding: 10px 5px 10px 5px;
 		}
 	</style>
 </head>
@@ -32,7 +36,7 @@
 		It is meant to be simple and plain to demo the code, not to show off my expertise in HTML/CSS.<br><br>Please see the blog article located <a href="http://webdriveriotutorial.blogspot.com/">here</a> for full details and all test scripts can be downloaded from <a href="https://github.com/onewithhammer/WebDriverIOTutorial">github</a>.<br><br>
 		<div class="col-md-8 text-left col-md-offset-2">
 			Here is a list of files used to test this web site.
-			<table cellpadding="10" border="1">
+			<table id="filelist" cellpadding="10" border="1">
 				<thead>
 				<tr>
 					<td align="center">
