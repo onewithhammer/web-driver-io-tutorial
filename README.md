@@ -67,6 +67,7 @@ Tutorial Files:
 | DataLoopExample1.js   | Looping Static Data to Validate URL Link/Text
 | DataLoopExample2.js   | Looping Static Data to Populate Form Fields
 | LinkTextURL2.js       | Link Text/URL Test By Looping Through Elements
+| CSSValidation1.js     | Example how to validate several CSS properties
 
 
 
