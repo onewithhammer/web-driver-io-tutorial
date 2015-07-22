@@ -4,7 +4,7 @@
 //  open a website
 //  validate title
 //
-//  Check the CSS properties
+//  Verfiy the following CSS properties:
 //    color
 //    padding (top, bottom, right, left)
 //    background color
