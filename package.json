@@ -12,14 +12,17 @@
     "test": "./node_modules/.bin/mocha *.js"
   },
   "keywords": [
-  "webdriverio",
-  "example",
-  "Tutorial"
+    "webdriverio",
+    "example",
+    "tutorial",
+    "working examples"
   ],
   "dependencies": {
     "mocha": "2.2.5",
     "should": "7.0.1",
     "webdriverio": "3.0.3"
+  },
+  "devDependencies": {
+    "mocha-mongodb": "^0.1.2"
   }
 }
-
