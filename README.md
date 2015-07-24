@@ -54,20 +54,30 @@ Tutorial Files:
 
 | Filename             | Description                                     |
 | :---------------------|:------------------------------------------------|
-| Tutorial1.js 				  | Title Test - Open page and verify title
-| LinkTextURL1.js 		  | Link Text/URL Test - Verify Link Text and URL
-| Copyright1.js 			  | Copyright Test - Verify Link Text and URL
-| FormFillSubmit1.js 	  | Populate Form Fields and Submit
-| ShowHideVerify1.js 	  | Click Show/Hide Button and Verify Text
-| DynamicBrowser.js     | Dymanically Invoke Different Browsers
-| CallbackPromise.js    | Compares callbacks VS promises
-| DebugExample1.js      | Example Shows Several Methods on How to Debug
-| FormFieldValidation.js| Example of Validating Errors
-| CommonLib.js          | Example of Reusable Functions (library)
-| DataLoopExample1.js   | Looping Static Data to Validate URL Link/Text
-| DataLoopExample2.js   | Looping Static Data to Populate Form Fields
-| LinkTextURL2.js       | Link Text/URL Test By Looping Through Elements
-| CSSValidation1.js     | Example how to validate several CSS properties
+| tutorial1.js 				  | Title Test - Open page and verify title
+| linkTextURL1.js 		  | Link Text/URL Test - Verify Link Text and URL
+| copyright1.js 			  | Copyright Test - Verify Link Text and URL
+| formFillSubmit1.js 	  | Populate Form Fields and Submit
+| showHideVerify1.js 	  | Click Show/Hide Button and Verify Text
+| dynamicBrowser.js     | Dymanically Invoke Different Browsers
+| callbackPromise.js    | Compares callbacks VS promises
+| debugExample1.js      | Example Shows Several Methods on How to Debug
+| formFieldValidation.js| Example of Validating Errors
+| commonLib.js          | Example of Reusable Functions (library)
+| dataLoopExample1.js   | Looping Static Data to Validate URL Link/Text
+| dataLoopExample2.js   | Looping Static Data to Populate Form Fields
+| linkTextURL2.js       | Link Text/URL Test By Looping Through Elements
+| cssValidation1.js     | Example how to validate several CSS properties
+
+## TEST
+
+```
+git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
+cd WebDriverIOTutorial
+sudo npm install
+sudo npm install mocha 
+mocha *.js
+```
 
 
 
