@@ -1,4 +1,4 @@
-// FormFieldValidation.js
+// formFieldValidation.js
 //
 // This is a simple test script that does the following:
 //  open a website
@@ -9,8 +9,8 @@
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should'),
-  // require the reusable command - CommonLib
-  common = require('./Common/CommonLib');
+  // require the reusable command - commonLib
+  common = require('./common/commonLib');
 
 // a test script block or suite
 describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', function() {

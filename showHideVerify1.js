@@ -1,17 +1,16 @@
-// Copyright1.js
+// showHideVerify1.js
 //
 // This is a simple test script that does the following:
 //  open a website
 //  validate title
-//  verify copyright text
-//
+
 
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');
 
 // a test script block or suite
-describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', function() {
+describe('Show/Hide Verify Test for Web Driver IO - Tutorial Test Page Website', function() {
 
   // set timeout to 10 seconds
 	this.timeout(10000);
@@ -30,7 +29,7 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
     return driver
       .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
       // get title, then pass title to function()
-      .getTitle().then(function (title) {
+      .getTitle().then( function (title) {
         // verify title
         (title).should.be.equal("Web Driver IO - Tutorial Test Page");
         // uncomment for console debug
@@ -38,22 +37,16 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
       });
   });
 
-  // Verify Copyright text using id as element selector
-  it('should contain Copyright text', function () {
+  // click "More Info" button and verify text in expanded element
+  it('should click more info button and verify text', function () {
     return driver
-      .getText("#copyright").then(function (link) {
-        console.log('Copyright found: ' + link);
-        (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
-      });
-  });
-
-  // Verify Copyright text using xpath as element selector
-  it('should contain Copyright text', function () {
-    return driver
-      // use p[1] since there more than on <p> tag
-      .getText("//footer/center/p[1]").then(function (link) {
-        console.log('Copyright found: ' + link);
-        (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
+      .click("#moreinfo").then (function () {
+        console.log('Clicked More Info button');
+      })
+      .waitForVisible("#collapseExample", 5000)
+      .getText("//div[@id='collapseExample']/div").then (function (e) {
+        console.log('Text: ' + e);
+        (e).should.be.equal("Sometimes the best things are hidden!");
       });
   });
 

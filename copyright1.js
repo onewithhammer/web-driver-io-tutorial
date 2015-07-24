@@ -1,10 +1,9 @@
-// LinkTextURL2.js
+// copyright1.js
 //
 // This is a simple test script that does the following:
 //  open a website
 //  validate title
-//  verify link text by looping through elements
-//  verify link URL by looping through elements
+//  verify copyright text
 //
 
 // required libraries
@@ -12,7 +11,7 @@ var webdriverio = require('webdriverio'),
   should = require('should');
 
 // a test script block or suite
-describe('Link Test for Web Driver IO - Tutorial Test Page Website', function() {
+describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', function() {
 
   // set timeout to 10 seconds
 	this.timeout(10000);
@@ -39,31 +38,22 @@ describe('Link Test for Web Driver IO - Tutorial Test Page Website', function() 
       });
   });
 
-  // Verify Contact Us link text
-  it('should contain Contact Us link text', function () {
+  // Verify Copyright text using id as element selector
+  it('should contain Copyright text', function () {
     return driver
-      .getText("//ul[@id='mylist']/li").then(function (link) {
-        // loop through each link
-        link.forEach(function(link) {
-          console.log('Link: ' + link);
-          if(link == "Contact Us") {
-            (link).should.equal("Contact Us");
-          }
-        });
+      .getText("#copyright").then(function (link) {
+        console.log('Copyright found: ' + link);
+        (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
       });
   });
 
-  // Verify Contact Us URL
-  it('should contain Contact Us URL', function () {
+  // Verify Copyright text using xpath as element selector
+  it('should contain Copyright text', function () {
     return driver
-      .getAttribute("//ul[@id='mylist']/li/a", "href").then(function (link) {
-        // loop through each link
-        link.forEach(function(link) {
-          console.log('URL found: ' + link);
-          if(link == "http://tlkeith.com/contact.html") {
-            (link).should.equal("http://tlkeith.com/contact.html");
-          }
-        });
+      // use p[1] since there more than on <p> tag
+      .getText("//footer/center/p[1]").then(function (link) {
+        console.log('Copyright found: ' + link);
+        (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
       });
   });
 

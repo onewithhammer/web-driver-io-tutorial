@@ -1,10 +1,10 @@
-// LinkTextURL1.js
+// linkTextURL2.js
 //
 // This is a simple test script that does the following:
 //  open a website
 //  validate title
-//  verify link text
-//  verify link URL
+//  verify link text by looping through elements
+//  verify link URL by looping through elements
 //
 
 // required libraries
@@ -42,18 +42,28 @@ describe('Link Test for Web Driver IO - Tutorial Test Page Website', function() 
   // Verify Contact Us link text
   it('should contain Contact Us link text', function () {
     return driver
-      .getText("//ul[@id='mylist']/li[4]/a").then(function (link) {
-        console.log('Link found: ' + link);
-        (link).should.equal("Contact Us");
+      .getText("//ul[@id='mylist']/li").then(function (link) {
+        // loop through each link
+        link.forEach(function(link) {
+          console.log('Link: ' + link);
+          if(link == "Contact Us") {
+            (link).should.equal("Contact Us");
+          }
+        });
       });
   });
 
   // Verify Contact Us URL
   it('should contain Contact Us URL', function () {
     return driver
-      .getAttribute("//ul[@id='mylist']/li[4]/a", "href").then(function (link) {
-        (link).should.equal("http://tlkeith.com/contact.html");
-        console.log('URL found: ' + link);
+      .getAttribute("//ul[@id='mylist']/li/a", "href").then(function (link) {
+        // loop through each link
+        link.forEach(function(link) {
+          console.log('URL found: ' + link);
+          if(link == "http://tlkeith.com/contact.html") {
+            (link).should.equal("http://tlkeith.com/contact.html");
+          }
+        });
       });
   });
 

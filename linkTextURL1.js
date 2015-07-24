@@ -1,16 +1,18 @@
-// ShowHideVerify1.js
+// linkTextURL1.js
 //
 // This is a simple test script that does the following:
 //  open a website
 //  validate title
-
+//  verify link text
+//  verify link URL
+//
 
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');
 
 // a test script block or suite
-describe('Show/Hide Verify Test for Web Driver IO - Tutorial Test Page Website', function() {
+describe('Link Test for Web Driver IO - Tutorial Test Page Website', function() {
 
   // set timeout to 10 seconds
 	this.timeout(10000);
@@ -29,7 +31,7 @@ describe('Show/Hide Verify Test for Web Driver IO - Tutorial Test Page Website',
     return driver
       .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
       // get title, then pass title to function()
-      .getTitle().then( function (title) {
+      .getTitle().then(function (title) {
         // verify title
         (title).should.be.equal("Web Driver IO - Tutorial Test Page");
         // uncomment for console debug
@@ -37,16 +39,21 @@ describe('Show/Hide Verify Test for Web Driver IO - Tutorial Test Page Website',
       });
   });
 
-  // click "More Info" button and verify text in expanded element
-  it('should click more info button and verify text', function () {
+  // Verify Contact Us link text
+  it('should contain Contact Us link text', function () {
     return driver
-      .click("#moreinfo").then (function () {
-        console.log('Clicked More Info button');
-      })
-      .waitForVisible("#collapseExample", 5000)
-      .getText("//div[@id='collapseExample']/div").then (function (e) {
-        console.log('Text: ' + e);
-        (e).should.be.equal("Sometimes the best things are hidden!");
+      .getText("//ul[@id='mylist']/li[4]/a").then(function (link) {
+        console.log('Link found: ' + link);
+        (link).should.equal("Contact Us");
+      });
+  });
+
+  // Verify Contact Us URL
+  it('should contain Contact Us URL', function () {
+    return driver
+      .getAttribute("//ul[@id='mylist']/li[4]/a", "href").then(function (link) {
+        (link).should.equal("http://tlkeith.com/contact.html");
+        console.log('URL found: ' + link);
       });
   });
 
