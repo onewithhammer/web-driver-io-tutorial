@@ -28,13 +28,13 @@ I wanted to share this information, so I wrote this article. I hope you find it 
 
 Use technologies to:
 
-* test web site functionality
-* test JavaScript functionality
-* can be run manually
-* can be run automatically
-* easy to learn language for non programmers
+* Test web site functionality
+* Test JavaScript functionality
+* Can be run manually
+* Can be run automatically
+* Easy to learn language for non programmers
 	* Q/A personnel with basic knowledge of HTML and JavaScript
-* use open source software
+* Use open source software
 
 ## Technologies
 
@@ -54,11 +54,11 @@ Tutorial Files:
 
 | Filename             | Description                                     |
 | :---------------------|:------------------------------------------------|
-| tutorial1.js 				  | Title Test - Open page and verify title
-| linkTextURL1.js 		  | Link Text/URL Test - Verify Link Text and URL
-| copyright1.js 			  | Copyright Test - Verify Link Text and URL
-| formFillSubmit1.js 	  | Populate Form Fields and Submit
-| showHideVerify1.js 	  | Click Show/Hide Button and Verify Text
+| tutorial1.js          | Title Test - Open page and verify title
+| linkTextURL1.js       | Link Text/URL Test - Verify Link Text and URL
+| copyright1.js         | Copyright Test - Verify Link Text and URL
+| formFillSubmit1.js 	| Populate Form Fields and Submit
+| showHideVerify1.js 	| Click Show/Hide Button and Verify Text
 | dynamicBrowser.js     | Dymanically Invoke Different Browsers
 | callbackPromise.js    | Compares callbacks VS promises
 | debugExample1.js      | Example Shows Several Methods on How to Debug
