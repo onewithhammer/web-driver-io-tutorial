@@ -69,30 +69,40 @@ Tutorial Files:
 | linkTextURL2.js       | Link Text/URL Test By Looping Through Elements
 | cssValidation1.js     | Example how to validate several CSS properties
 | saucelabs.js          | Example how to use cloud based test site (saucelabs)
+| gruntSauceLabs.js     | Example how to use grunt + grunt-webdriver + saucelabs
 
 ## TEST
 
-```
 Create selenium directory:
 Install Selenium Stand Alone Server
  Go to http://www.seleniumhq.org/download/
  Download jar file and move into the “selenium” directory.
 
 Start the Selenium Stand Alone Server:
+```
  # java -jar selenium-server-standalone-2.46.0.jar
+```
 
 Firefox
  Install firefox browser, if not already installed.
 
+```
 git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
 cd WebDriverIOTutorial
 sudo npm install
+```
 
-run all (not all will run - saucelabs.js will not run):
-mocha *.js
+run single test:
+```
+$mocha <filename>
+```
 
-run single:
-mocha <filename>
+saucelabs.js & gruntSauceLabs.js - you will need to set the environment variables for SAUCE_USERNAME & SAUCE_ACCESS_KEY
+
+
+run grunt
+````
+$ grunt webdriver
 ```
 
 ## License
