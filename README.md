@@ -93,14 +93,21 @@ $ sudo npm install
 ```
 
 run single test:
+$ mocha <test script filename>
 ```
-$ mocha <filename>
+$ mocha tutorial1.js
 ```
 
-saucelabs.js & gruntSauceLabs.js - you will need to set the environment variables for SAUCE_USERNAME & SAUCE_ACCESS_KEY
+Note: saucelabs.js & gruntSauceLabs.js - You will need a saucelabs account in order to set the environment variables for SAUCE_USERNAME & SAUCE_ACCESS_KEY
+
+```
+$ export SAUCE_USERNAME=<your saucelabs username>
+$ export SAUCE_ACCESS_KEY=<your saucelabs access key>
+```
 
 
 run grunt
+$ grunt webdriver
 ````
 $ grunt webdriver
 ```
