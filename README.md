@@ -87,14 +87,14 @@ Firefox
  Install firefox browser, if not already installed.
 
 ```
-git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
-cd WebDriverIOTutorial
-sudo npm install
+$ git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
+$ cd WebDriverIOTutorial
+$ sudo npm install
 ```
 
 run single test:
 ```
-$mocha <filename>
+$ mocha <filename>
 ```
 
 saucelabs.js & gruntSauceLabs.js - you will need to set the environment variables for SAUCE_USERNAME & SAUCE_ACCESS_KEY
