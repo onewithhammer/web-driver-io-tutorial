@@ -2,7 +2,8 @@
   "name": "web-driver-io-tutorial",
   "version": "0.0.3",
   "description": "Web Driver IO Tutorial with working web site and examples",
-  "author": "Tony Keith <tony.keith@yahoo.com> (www.tlkeith.com)",
+  "author": "Tony Keith <tony.keith@yahoo.com>",
+  "homepage": "http://tlkeith.com/WebDriverIOTutorialTest.html",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,12 +15,12 @@
   "keywords": [
     "webdriverio",
     "mocha",
-    "should"
+    "should",
     "example",
     "tutorial",
     "working examples",
     "test script examples",
-    "reusable commands"
+    "reusable commands",
     "selenium"
   ],
   "dependencies": {
