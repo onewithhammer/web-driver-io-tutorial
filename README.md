@@ -74,13 +74,16 @@ Tutorial Files:
 ## TEST
 
 Create selenium directory:<br>
-Install Selenium Stand Alone Server<br>
+```
+$ mkdir selenium
+```
+Install Selenium Stand Alone Server:<br>
 Go to http://www.seleniumhq.org/download/<br>
-Download jar file and move into the “selenium” directory.<br>
+Download jar file.  Save/move into the “selenium” directory.<br>
 
 Start the Selenium Stand Alone Server:
 ```
- # java -jar selenium-server-standalone-2.46.0.jar
+ $ java -jar selenium-server-standalone-2.46.0.jar
 ```
 
 Firefox<br>
