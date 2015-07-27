@@ -52,8 +52,8 @@ List of technologies I choose:
 
 Tutorial Files:
 
-| Filename             | Description                                     |
-| :---------------------|:------------------------------------------------|
+| Filename             | Description                                             |
+| :---------------------|:--------------------------------------------------------|
 | tutorial1.js          | Title Test - Open page and verify title
 | linkTextURL1.js       | Link Text/URL Test - Verify Link Text and URL
 | copyright1.js         | Copyright Test - Verify Link Text and URL
@@ -68,6 +68,7 @@ Tutorial Files:
 | dataLoopExample2.js   | Looping Static Data to Populate Form Fields
 | linkTextURL2.js       | Link Text/URL Test By Looping Through Elements
 | cssValidation1.js     | Example how to validate several CSS properties
+| saucelabs.js          | Example how to use cloud based test site (saucelabs)
 
 ## TEST
 
