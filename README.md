@@ -73,18 +73,18 @@ Tutorial Files:
 
 ## TEST
 
-Create selenium directory:
-Install Selenium Stand Alone Server
- Go to http://www.seleniumhq.org/download/
- Download jar file and move into the “selenium” directory.
+Create selenium directory:<br>
+Install Selenium Stand Alone Server<br>
+Go to http://www.seleniumhq.org/download/<br>
+Download jar file and move into the “selenium” directory.<br>
 
 Start the Selenium Stand Alone Server:
 ```
  # java -jar selenium-server-standalone-2.46.0.jar
 ```
 
-Firefox
- Install firefox browser, if not already installed.
+Firefox<br>
+Install firefox browser, if not already installed.
 
 ```
 $ git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
@@ -92,8 +92,7 @@ $ cd WebDriverIOTutorial
 $ sudo npm install
 ```
 
-run single test:
-
+run single test:<br>
 $ mocha [test-script-filename]
 ```
 $ mocha tutorial1.js
@@ -106,9 +105,7 @@ $ export SAUCE_USERNAME=[your saucelabs username]
 $ export SAUCE_ACCESS_KEY=[your saucelabs access key]
 ```
 
-
-run grunt:
-
+run grunt:<br>
 $ grunt [task name]
 
 ````
