@@ -106,8 +106,9 @@ $ export SAUCE_ACCESS_KEY=<your saucelabs access key>
 ```
 
 
-run grunt
+run grunt:
 $ grunt webdriver
+
 ````
 $ grunt webdriver
 ```
