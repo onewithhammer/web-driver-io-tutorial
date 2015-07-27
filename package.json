@@ -27,5 +27,9 @@
     "mocha": "2.2.5",
     "should": "7.0.1",
     "webdriverio": "3.0.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-webdriver": "^0.5.2"
   }
 }
