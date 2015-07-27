@@ -87,8 +87,10 @@ Firefox
 git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
 cd WebDriverIOTutorial
 sudo npm install
-run all:
+
+run all (not all will run - saucelabs.js will not run):
 mocha *.js
+
 run single:
 mocha <filename>
 ```
