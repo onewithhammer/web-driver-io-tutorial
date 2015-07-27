@@ -94,7 +94,7 @@ $ sudo npm install
 
 run single test:
 
-$ mocha <test script filename>
+$ mocha <test-script-filename>
 ```
 $ mocha tutorial1.js
 ```
