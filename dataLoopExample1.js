@@ -29,7 +29,9 @@ var linkArray = [
 {"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/formFieldValidation.js", "name" : "formFieldValidation.js"},
 {"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/common/commonLib.js", "name" : "commonLib.js"},
 {"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/dataLoopExample1.js", "name" : "dataLoopExample1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/cssValidation1.js", "name" : "cssValidation1.js"}
+{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/cssValidation1.js", "name" : "cssValidation1.js"},
+{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/sauceLabs.js", "name" : "sauceLabs.js"},
+{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/gruntSauceLabs.js", "name" : "gruntSauceLabs.js"}
 ];
   // set timeout to 30 seconds
 	this.timeout(30000);
