@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/onewithhammer/WebDriverIOTutorial"
+    "url": "https://github.com/onewithhammer/web-driver-io-tutorial"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha *.js"
