@@ -44,6 +44,8 @@ List of technologies I choose:
 * shouldjs – assertion library
 * webdriverio – browser control bindings (language bindings)
 * selenium – browser abstraction and running factory
+* grunt - task runner
+* grunt-webdriver - grunt plugin for webdriver
 * Browser/Mobile drivers + browsers 
 	* Firefox (Browser only)
 	* Chrome (Browser and driver)
