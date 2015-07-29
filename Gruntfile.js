@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           name: 'This is an example test script using grunt-driver and saucelabs'
       },
       ieexample: {
-        tests: ['tutorial2.js'],
+        tests: ['gruntSaucelabs.js'],
         options: {
           desiredCapabilities: {
             browserName: 'internet explorer',
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         }
       },
       chromeexample: {
-        tests: ['tutorial2.js'],
+        tests: ['gruntSaucelabs.js'],
         options: {
           desiredCapabilities: {
             browserName: 'chrome',
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         }
       },
       safariexample: {
-        tests: ['tutorial2.js'],
+        tests: ['gruntSaucelabs.js'],
         options: {
           desiredCapabilities: {
             browserName: 'safari',
