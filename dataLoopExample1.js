@@ -18,23 +18,24 @@ describe('Loop Data URL Test for Web Driver IO - Tutorial Test Page Website', fu
 
 // Link data - link and text
 var linkArray = [
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/tutorial1.js", "name" : "tutorial1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/linkTextURL1.js", "name" : "linkTextURL1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/copyright1.js", "name" : "copyright1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/formFillSubmit1.js", "name" : "formFillSubmit1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/showHideVerify1.js", "name" : "showHideVerify1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/dynamicBrowser.js", "name" : "dynamicBrowser.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/callbackPromise.js", "name" : "callbackPromise.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/debugExample1.js", "name" : "debugExample1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/formFieldValidation.js", "name" : "formFieldValidation.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/common/commonLib.js", "name" : "commonLib.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/dataLoopExample1.js", "name" : "dataLoopExample1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/cssValidation1.js", "name" : "cssValidation1.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/saucelabs.js", "name" : "saucelabs.js"},
-{"link" : "https://github.com/onewithhammer/WebDriverIOTutorial/blob/master/gruntSaucelabs.js", "name" : "gruntSaucelabs.js"}
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/tutorial1.js", "name" : "tutorial1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/linkTextURL1.js", "name" : "linkTextURL1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/copyright1.js", "name" : "copyright1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/formFillSubmit1.js", "name" : "formFillSubmit1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/showHideVerify1.js", "name" : "showHideVerify1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/dynamicBrowser.js", "name" : "dynamicBrowser.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/callbackPromise.js", "name" : "callbackPromise.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/debugExample1.js", "name" : "debugExample1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/formFieldValidation.js", "name" : "formFieldValidation.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/common/commonLib.js", "name" : "commonLib.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/dataLoopExample1.js", "name" : "dataLoopExample1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/dataLoopExample2.js", "name" : "dataLoopExample2.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/cssValidation1.js", "name" : "cssValidation1.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/saucelabs.js", "name" : "saucelabs.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/gruntSaucelabs.js", "name" : "gruntSaucelabs.js"}
 ];
-  // set timeout to 30 seconds
-	this.timeout(30000);
+  // set timeout to 60 seconds
+	this.timeout(90000);
   var driver = {};
 
   // hook to run before tests
