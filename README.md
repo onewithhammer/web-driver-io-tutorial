@@ -116,6 +116,15 @@ $ grunt [task name]
 ````
 $ grunt webdriver
 ```
+## TO DO
+
+* use WDIO as the test runner
+* show example of CI (Travis)
+* should assertion lib
+  * show examples deepEqual() 
+  * show examples of property()
+  * show examples of instanceOf()
+
 
 ## License
 MIT
