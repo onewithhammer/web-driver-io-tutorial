@@ -10,7 +10,7 @@
     "url": "https://github.com/onewithhammer/web-driver-io-tutorial"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha callbackPromise.js copyright1.js cssValidation1.js dataLoopExample1.js dataLoopExample2.js formFieldValidation.js formFillSubmit1.js linkTextURL1.js linkTextURL2.js showHideVerify1.js tutorial1.js"
+    "test": "./node_modules/.bin/mocha saucelabs-sauceconnect.js"
   },
   "keywords": [
     "webdriverio",
