@@ -34,8 +34,8 @@ var linkArray = [
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/saucelabs.js", "name" : "saucelabs.js"},
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/gruntSaucelabs.js", "name" : "gruntSaucelabs.js"}
 ];
-  // set timeout to 60 seconds
-	this.timeout(90000);
+  // set timeout to 120 seconds
+	this.timeout(120000);
   var driver = {};
 
   // hook to run before tests
