@@ -1,5 +1,8 @@
+
 Web Driver IO Tutorial
 ======================
+
+[![Build Status](https://travis-ci.org/onewithhammer/web-driver-io-tutorial.svg?branch=master)](https://travis-ci.org/onewithhammer/web-driver-io-tutorial)
 
 This is the README for the Web Driver IO Tutorial.
 
