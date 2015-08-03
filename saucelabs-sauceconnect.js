@@ -10,7 +10,7 @@ var webdriverio = require('webdriverio'),
   should = require('should');
 
 // a test script block or suite
-describe('Saucelabs Test for Web Driver IO - Tutorial Test Page Website', function() {
+describe('Saucelabs-SauceConnect Test for Web Driver IO - Tutorial Test Page Website', function() {
 
   // set timeout to 15 seconds
 	this.timeout(15000);
