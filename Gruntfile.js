@@ -5,8 +5,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     webdriver: {
       options: {
-          host: 'ondemand.saucelabs.com',
-          port: 80,
+          host: (process.env.BUILD_NUMBER) ? 'localhost':'ondemand.saucelabs.com',
+          port: (process.env.BUILD_NUMBER) ? 4445:80,
           user: process.env.SAUCE_USERNAME,
           key: process.env.SAUCE_ACCESS_KEY,
           tags: ['saucelabs'],
@@ -46,4 +46,6 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-webdriver');
+
+  grunt.registerTask('default', ['grunt-webdriver', 'test']);
 };
