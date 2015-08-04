@@ -34,7 +34,7 @@ describe('Grunt Saucelabs Test for Web Driver IO - Tutorial Test Page Website', 
   it('should be load correct page and title', function () {
     // load page, then call function()
     return driver
-      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
+      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html').then()
       // get title, then pass title to function()
       .getTitle().then( function (title) {
         // verify title
