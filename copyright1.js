@@ -66,6 +66,10 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
 
   // a "hook" to run after all tests in this block
 	after(function(done) {
-    driver.end(done);
+    if(typeof browser === "undefined") {
+      driver.end(done);
+    } else {
+      done();
+    }
   });
 });
