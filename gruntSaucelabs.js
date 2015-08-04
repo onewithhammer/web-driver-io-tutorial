@@ -18,7 +18,7 @@ describe('Grunt Saucelabs Test for Web Driver IO - Tutorial Test Page Website', 
 
   // hook to run before tests
   before( function (done) {
-    // check for global browser
+    // check for global browser (grunt + grunt-webdriver)
     if(typeof browser === "undefined") {
       // load the driver for browser
       driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
