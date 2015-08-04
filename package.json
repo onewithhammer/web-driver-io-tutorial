@@ -10,7 +10,7 @@
     "url": "https://github.com/onewithhammer/web-driver-io-tutorial"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha saucelabs-sauceconnect.js"
+    "test": "grunt webdriver"
   },
   "keywords": [
     "webdriverio",
