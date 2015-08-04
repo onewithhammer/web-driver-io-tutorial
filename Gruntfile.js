@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           name: 'This is an example test script using grunt-driver and saucelabs'
       },
       ieexample: {
-        tests: ['gruntSaucelabs.js'],
+        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'callbackPromise.js','copyright1.js'],
         options: {
           desiredCapabilities: {
             browserName: 'internet explorer',
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         }
       },
       chromeexample: {
-        tests: ['gruntSaucelabs.js'],
+        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'callbackPromise.js','copyright1.js'],
         options: {
           desiredCapabilities: {
             browserName: 'chrome',
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         }
       },
       safariexample: {
-        tests: ['gruntSaucelabs.js'],
+        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'callbackPromise.js','copyright1.js'],
         options: {
           desiredCapabilities: {
             browserName: 'safari',
@@ -46,6 +46,4 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-webdriver');
-
-  grunt.registerTask('default', ['grunt-webdriver', 'test']);
 };
