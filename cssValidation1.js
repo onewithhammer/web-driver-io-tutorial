@@ -22,9 +22,16 @@ describe('CSS Property Test for Web Driver IO - Tutorial Test Page Website', fun
 
   // hook to run before tests
   before( function (done) {
-    // load the driver for browser
-    driver = webdriverio.remote({desiredCapabilities: {browserName: 'firefox'} });
-    driver.init(done);
+    // check for global browser (grunt + grunt-webdriver)
+    if(typeof browser === "undefined") {
+      // load the driver for browser
+      driver = webdriverio.remote({desiredCapabilities: {browserName: 'firefox'} });
+      driver.init(done);
+    } else {
+      // grunt will load the browser driver
+      driver = browser;
+      done();
+    }
   });
 
   // a test spec - "specification"
@@ -82,6 +89,10 @@ describe('CSS Property Test for Web Driver IO - Tutorial Test Page Website', fun
 
   // a "hook" to run after all tests in this block
 	after(function(done) {
-    driver.end(done);
+    if(typeof browser === "undefined") {
+      driver.end(done);
+    } else {
+      done();
+    }
   });
 });
