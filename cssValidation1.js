@@ -16,8 +16,8 @@ var webdriverio = require('webdriverio'),
 // a test script block or suite
 describe('CSS Property Test for Web Driver IO - Tutorial Test Page Website', function() {
 
-  // set timeout to 10 seconds
-	this.timeout(10000);
+  // set timeout to 30 seconds
+	this.timeout(30000);
   var driver = {};
 
   // hook to run before tests
