@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           name: 'This is an example test script using grunt-driver and saucelabs'
       },
       ieexample: {
-        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'copyright1.js', 'cssValidation1.js', 'dataLoopExample2.js', 'formFieldValidation.js'],
+        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'copyright1.js', 'cssValidation1.js', 'dataLoopExample2.js', 'formFieldValidation.js', 'formFillSubmit1.js', 'linkTextURL1.js', 'linkTextURL2.js'],
         options: {
           desiredCapabilities: {
             browserName: 'internet explorer',
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         }
       },
       chromeexample: {
-        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'copyright1.js', 'cssValidation1.js', 'dataLoopExample2.js', 'formFieldValidation.js'],
+        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'copyright1.js', 'cssValidation1.js', 'dataLoopExample2.js', 'formFieldValidation.js', 'formFillSubmit1.js', 'linkTextURL1.js', 'linkTextURL2.js'],
         options: {
           desiredCapabilities: {
             browserName: 'chrome',
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         }
       },
       safariexample: {
-        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'copyright1.js', 'cssValidation1.js', 'dataLoopExample2.js', 'formFieldValidation.js'],
+        tests: ['gruntSaucelabs.js', 'tutorial1.js', 'copyright1.js', 'cssValidation1.js', 'dataLoopExample2.js', 'formFieldValidation.js', 'formFillSubmit1.js', 'linkTextURL1.js', 'linkTextURL2.js'],
         options: {
           desiredCapabilities: {
             browserName: 'safari',
