@@ -32,7 +32,8 @@ var linkArray = [
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/dataLoopExample2.js", "name" : "dataLoopExample2.js"},
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/cssValidation1.js", "name" : "cssValidation1.js"},
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/saucelabs.js", "name" : "saucelabs.js"},
-{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/gruntSaucelabs.js", "name" : "gruntSaucelabs.js"}
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/gruntSaucelabs.js", "name" : "gruntSaucelabs.js"},
+{"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/Gruntfile.js", "name" : "Gruntfile.js"}
 ];
   // set timeout to 120 seconds
 	this.timeout(120000);
