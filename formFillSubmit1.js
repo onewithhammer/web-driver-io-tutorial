@@ -9,8 +9,8 @@
 //  clears first name
 //  fills/validates first name using xpath from form
 //  fills/validates last name using id
-//  submits the form
-//  waits for search results page
+//  submit the form
+//  wait for search results page
 
 // required libraries
 var webdriverio = require('webdriverio'),
@@ -25,9 +25,16 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
 
   // hook to run before tests
   before( function (done) {
-    // load the driver for browser
-    driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
-    driver.init(done);
+    // check for global browser (grunt + grunt-webdriver)
+    if(typeof browser === "undefined") {
+      // load the driver for browser
+      driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
+      driver.init(done);
+    } else {
+      // grunt will load the browser driver
+      driver = browser;
+      done();
+    }
   });
 
   // a test spec - "specification"
@@ -110,6 +117,10 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
 
   // a "hook" to run after all tests in this block
 	after(function(done) {
-    driver.end(done);
+    if(typeof browser === "undefined") {
+      driver.end(done);
+    } else {
+      done();
+    }
   });
 });
