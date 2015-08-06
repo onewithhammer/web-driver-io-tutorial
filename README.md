@@ -75,6 +75,7 @@ Tutorial Files:
 | cssValidation1.js     | Example how to validate several CSS properties
 | saucelabs.js          | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js     | Example how to use grunt + grunt-webdriver + saucelabs
+| Gruntfile.js          | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
 
 ## TEST
 
@@ -122,8 +123,8 @@ $ grunt webdriver
 ## TO DO
 
 * use WDIO as the test runner
-* show example of CI (Travis)
-* should assertion lib
+* show example of CI (Travis) - DONE
+* should assertion lib - DONE
   * show examples deepEqual() 
   * show examples of property()
   * show examples of instanceOf()
