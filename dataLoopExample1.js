@@ -35,8 +35,8 @@ var linkArray = [
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/gruntSaucelabs.js", "name" : "gruntSaucelabs.js"},
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/Gruntfile.js", "name" : "Gruntfile.js"}
 ];
-  // set timeout to 120 seconds
-	this.timeout(120000);
+  // set timeout to 180 seconds
+	this.timeout(180000);
   var driver = {};
 
   // hook to run before tests
@@ -82,9 +82,9 @@ var linkArray = [
         (link).should.equal(d.link);
         console.log('URL found: ' + d.link);
       })
-      // go to URL page and verify it exists
+      // go to URL page and verify it exists (wait 15 seconds)
       .click('a=' + d.name)
-      .waitForVisible("#js-repo-pjax-container", 10000).then(function () {
+      .waitForVisible("#js-repo-pjax-container", 15000).then(function () {
         console.log('Github Page Found');
       });
     });
