@@ -7,7 +7,7 @@
 //
 //    each link is validated and the page is loaded
 
-// The example demos how to use an array of data and through the data to verify URL/TEXT and the page exists
+// The example demos how to use an array of data and loop through the data to verify URL/TEXT and the page exists
 
 // required libraries
 var webdriverio = require('webdriverio'),
