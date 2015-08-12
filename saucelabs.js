@@ -4,6 +4,8 @@
 //  open a website using cloud based test site (saucelabs)
 //  validate title
 //
+// To run:
+//  $ mocha saucelabs.js
 
 // required libraries
 var webdriverio = require('webdriverio'),

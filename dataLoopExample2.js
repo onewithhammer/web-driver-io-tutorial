@@ -9,6 +9,9 @@
 // Wait for results page
 // Verify first / last name on the results page
 
+// To Run:
+//  $ mocha dataLoopExample2.js OR $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
+
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');

@@ -4,6 +4,9 @@
 //  open a website using cloud based test site (grunt and saucelabs)
 //  validate title
 //
+//
+// To Run:
+//  $ mocha gruntSaucelabs.js OR $ grunt --gruntfile Gruntfile-gruntSaucelabs.js webdriver
 
 // required libraries
 var webdriverio = require('webdriverio'),
