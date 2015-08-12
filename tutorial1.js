@@ -1,6 +1,6 @@
 // tutorial1.js
 //
-// This is a simple test script that does the following:
+// This is a simple test script that does the following tests:
 //  open a website
 //  validate title
 //
