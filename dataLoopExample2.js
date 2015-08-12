@@ -57,7 +57,7 @@ var dataArray = [
 
   // loop through each dataArray 
   dataArray.forEach(function(d) {
-    it('should populate fields, sumbit page', function() {
+    it('should populate fields, submit page', function() {
       return driver
       // make sure you are on the starting page
       .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
