@@ -1,3 +1,8 @@
+// Default Gruntfile
+//
+// To Run:
+//  $ grunt webdriver
+
 module.exports = function(grunt) {
 
   // Project configuration.
