@@ -26,6 +26,7 @@ var dataArray = [
 {"firstName" : "Jane", "lastName" : "Doe"},
 {"firstName" : "Don", "lastName" : "Johnson"}
 ];
+
   // set timeout to 30 seconds
 	this.timeout(30000);
   var driver = {};
@@ -60,7 +61,7 @@ var dataArray = [
 
   // loop through each dataArray 
   dataArray.forEach(function(d) {
-    it('should populate fields, submit page', function() {
+    it('should populate fields, submit form, then wait for results page and verify data', function() {
       return driver
       // make sure you are on the starting page
       .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
