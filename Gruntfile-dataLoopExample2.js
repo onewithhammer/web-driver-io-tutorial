@@ -1,4 +1,4 @@
-// Gruntfile for gruntSaucelabs.js
+// Gruntfile for dataLoopExample2.js to run against saucelabs
 //
 // To Run:
 //  $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
