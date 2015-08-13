@@ -61,21 +61,21 @@ Tutorial Files:
 | Filename | Description |
 | :--|:--|
 | tutorial1.js | Title Test - Open page and verify title
-| linkTextURL1.js               | Link Text/URL Test - Verify Link Text and URL
-| copyright1.js                 | Copyright Test - Verify Link Text and URL
-| formFillSubmit1.js 	          | Populate Form Fields and Submit
-| showHideVerify1.js            | Click Show/Hide Button and Verify Text
-| dynamicBrowser.js             | Dynamically Invoke Different Browsers
-| callbackPromise.js            | Compares callbacks VS promises
-| debugExample1.js              | Example Shows Several Methods on How to Debug
-| formFieldValidation.js        | Example of Validating Errors
-| commonLib.js                  | Example of Reusable Functions (library)
-| dataLoopExample1.js           | Looping Static Data to Validate URL Link/Text
-| dataLoopExample2.js           | Looping Static Data to Populate Form Fields
-| linkTextURL2.js               | Link Text/URL Test By Looping Through Elements
-| cssValidation1.js             | Example how to validate several CSS properties
-| saucelabs.js                  | Example how to use cloud based test site (saucelabs)
-| gruntSauceLabs.js             | Example how to use grunt + grunt-webdriver + saucelabs
+| linkTextURL1.js | Link Text/URL Test - Verify Link Text and URL
+| copyright1.js | Copyright Test - Verify Link Text and URL
+| formFillSubmit1.js | Populate Form Fields and Submit
+| showHideVerify1.js | Click Show/Hide Button and Verify Text
+| dynamicBrowser.js | Dynamically Invoke Different Browsers
+| callbackPromise.js | Compares callbacks VS promises
+| debugExample1.js  | Example Shows Several Methods on How to Debug
+| formFieldValidation.js | Example of Validating Errors
+| commonLib.js | Example of Reusable Functions (library)
+| dataLoopExample1.js | Looping Static Data to Validate URL Link/Text
+| dataLoopExample2.js | Looping Static Data to Populate Form Fields
+| linkTextURL2.js | Link Text/URL Test By Looping Through Elements
+| cssValidation1.js | Example how to validate several CSS properties
+| saucelabs.js | Example how to use cloud based test site (saucelabs)
+| gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | Gruntfile.js | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
 | Gruntfile-dataLoopExample2.js | Gruntfile for dataLoopExample2.js to run against saucelabs
 | Gruntfile-gruntSaucelabs.js |Gruntfile for gruntSaucelabs.js to run against saucelabs
@@ -150,12 +150,14 @@ $ wdio wdio-conf-saucelabs.dataLoopExample2.js
 ## TO DO
 
 * use WDIO as the test runner - DONE
+  * see wdio config files
 * show example of CI (Travis) - DONE
 	* see .travis.yml file for more details
-* should assertion lib - DONE
+* show more should assertion lib examples
   * show examples deepEqual() 
   * show examples of property()
   * show examples of instanceOf()
+* show chai assertion lib examples
 
 
 ## License
