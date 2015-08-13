@@ -58,14 +58,14 @@ List of technologies I choose:
 
 Tutorial Files:
 
-| Filename                     | Description                                                 |
-| :-----------------------------|:-----------------------------------------------------------|
-| tutorial1.js                  | Title Test - Open page and verify title
+| Filename | Description |
+| :--|:--|
+| tutorial1.js | Title Test - Open page and verify title
 | linkTextURL1.js               | Link Text/URL Test - Verify Link Text and URL
 | copyright1.js                 | Copyright Test - Verify Link Text and URL
 | formFillSubmit1.js 	          | Populate Form Fields and Submit
 | showHideVerify1.js            | Click Show/Hide Button and Verify Text
-| dynamicBrowser.js             | Dymanically Invoke Different Browsers
+| dynamicBrowser.js             | Dynamically Invoke Different Browsers
 | callbackPromise.js            | Compares callbacks VS promises
 | debugExample1.js              | Example Shows Several Methods on How to Debug
 | formFieldValidation.js        | Example of Validating Errors
@@ -76,8 +76,11 @@ Tutorial Files:
 | cssValidation1.js             | Example how to validate several CSS properties
 | saucelabs.js                  | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js             | Example how to use grunt + grunt-webdriver + saucelabs
-| Gruntfile.js                  | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
+| Gruntfile.js | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
 | Gruntfile-dataLoopExample2.js | Gruntfile for dataLoopExample2.js to run against saucelabs
+| Gruntfile-gruntSaucelabs.js |Gruntfile for gruntSaucelabs.js to run against saucelabs
+| wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
+| wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
 
 ## TEST
 
