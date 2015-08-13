@@ -29,15 +29,15 @@ I wanted to share this information, so I wrote this article. I hope you find it 
 
 ## Objectives
 
-Use technologies to:
+Use Technologies That:
 
-* Test web site functionality
-* Test JavaScript functionality
-* Can be run manually
-* Can be run automatically
-* Easy to learn language for non programmers
+* Can test web site functionality
+* Can test JavaScript functionality
+* Can be run manually from command line
+* Can be run automatically with a CI
+* Have an easy to learn language for non programmers
 	* Q/A personnel with basic knowledge of HTML and JavaScript
-* Use open source software
+* Use open source software (except cloud based testing platforms)
 
 ## Technologies
 
@@ -47,7 +47,7 @@ List of technologies I choose:
 * shouldjs – assertion library
 * webdriverio – browser control bindings (language bindings)
 * selenium – browser abstraction and running factory
-* grunt - task runner
+* grunt - javascript task runner
 * grunt-webdriver - grunt plugin for webdriver
 * Browser/Mobile drivers + browsers 
 	* Firefox (Browser only)
@@ -89,7 +89,7 @@ Download jar file.  Save/move into the “selenium” directory.<br>
 
 Start the Selenium Stand Alone Server:
 ```
- $ java -jar selenium-server-standalone-2.46.0.jar
+ $ java -jar selenium-server-standalone-2.47.1.jar
 ```
 
 Firefox<br>
@@ -98,10 +98,10 @@ Install firefox browser, if not already installed.
 ```
 $ git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
 $ cd WebDriverIOTutorial
-$ sudo npm install
+$ npm install OR $sudo npm install
 ```
-
-run single test:<br>
+## RUN
+Run locally single test using mocha as framework and runner:<br>
 $ mocha [test-script-filename]
 ```
 $ mocha tutorial1.js
@@ -114,16 +114,39 @@ $ export SAUCE_USERNAME=[your saucelabs username]
 $ export SAUCE_ACCESS_KEY=[your saucelabs access key]
 ```
 
-run grunt:<br>
+Run grunt with default config file (mocha as framework & grunt as runner):<br>
 $ grunt [task name]
 
 ````
 $ grunt webdriver
 ```
+
+OR
+
+Run grunt specifying a config file:<br>
+$ grunt --gruntfile <config-filename> [task name]
+
+````
+$ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
+```
+
+Run locally single test using mocha as framework and wdio as the runner:<br>
+$ wdio [config-filename]
+```
+$ wdio wdio-conf.dataLoopExample2.js
+```
+
+Run on saucelabs a single test using mocha as framework and wdio as the runner on 2 OS/browsers:<br>
+$ wdio [config-filename]
+```
+$ wdio wdio-conf-saucelabs.dataLoopExample2.js
+```
+
 ## TO DO
 
-* use WDIO as the test runner
+* use WDIO as the test runner - DONE
 * show example of CI (Travis) - DONE
+	* see .travis.yml file for more details
 * should assertion lib - DONE
   * show examples deepEqual() 
   * show examples of property()
