@@ -4,6 +4,8 @@
 //  open a website using cloud based test site (saucelabs and sauceconnect)
 //  validate title
 //
+// This script will only run if sauce connect is running locally.
+// For example if script is invoked from Travis CL
 
 // required libraries
 var webdriverio = require('webdriverio'),
@@ -50,7 +52,7 @@ describe('Saucelabs-SauceConnect Test for Web Driver IO - Tutorial Test Page Web
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
+  after(function(done) {
     driver.end(done);
   });
 });
