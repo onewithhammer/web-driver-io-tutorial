@@ -1,4 +1,4 @@
-// WDIO config file for dataLoopExample2.js on two different browsers.
+// WDIO config file for dataLoopExample2.js on two different browsers (locally)
 //
 // You must have Firefox and Chrome installed for this script to run properly
 //
