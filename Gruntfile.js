@@ -1,4 +1,6 @@
-// Default Gruntfile
+// Default Gruntfile - used to build/test my Github project
+//
+// This grunt configuration can be run locally or from Travis CL
 //
 // To Run:
 //  $ grunt webdriver
