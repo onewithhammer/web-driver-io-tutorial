@@ -1,4 +1,4 @@
-// Gruntfile for gruntSaucelabs.js
+// Gruntfile for gruntSaucelabs.js to run against saucelabs
 //
 // To Run:
 //  $ grunt --gruntfile Gruntfile-gruntSaucelabs.js webdriver
