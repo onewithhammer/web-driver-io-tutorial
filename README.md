@@ -7,7 +7,7 @@ Web Driver IO Tutorial
 This is the README for the Web Driver IO Tutorial.
 
 Please see my blog for a complete description of the files and much more
-located at:
+information located at:
 
 http://webdriveriotutorial.blogspot.com/
 
@@ -22,10 +22,11 @@ I recently had an interesting challenge presented to me. I needed to introduce a
 
 This was really two (2) separate challenges. The first was to find the technologies to use to do the automated testing. The second was actually training the Q/A department. 
 
-The article will only address the technologies used and what I learned in the process. 
+The project will only address the technologies used and what I learned in the process. 
 
-The technologies worked well but I really had to search for information and spent many hours figuring out issues. There doesn't seem to be much on the Internet about this.
-I wanted to share this information, so I wrote this article. I hope you find it useful. If you do, please let me know.
+The technologies worked well but I really had to search for information and spent many hours figuring out issues. There doesn't seem to be much on the Internet about this. I wanted to share this information, so I wrote this project along with a web site page to test all the scripts against.
+
+I hope you find this project useful. If you do, please let me know.
 
 ## Objectives
 
@@ -43,11 +44,11 @@ Use Technologies That:
 
 List of technologies I choose:
 
-* mocha – test framework + runner - executes the test scripts
+* mocha – test framework and executes the test scripts (runner)
 * shouldjs – assertion library
-* webdriverio – browser control bindings (JS language bindings)
+* webdriverio – browser control bindings (JS language bindings to communicate with Selenium)
 * selenium – browser abstraction and running factory
-* grunt - javascript task runner
+* grunt - javascript task runner (used as test runner for cloud based testing platform)
 * grunt-webdriver - grunt plugin for webdriver
 * wdio - test runner
 * Browser/Mobile drivers + browsers 
@@ -105,7 +106,7 @@ $ git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
 $ cd WebDriverIOTutorial
 $ npm install OR $sudo npm install
 ```
-## RUN
+## RUN TESTS
 Run locally single test using mocha as framework and runner:<br>
 $ mocha [test-script-filename]
 ```
