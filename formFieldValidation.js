@@ -4,7 +4,7 @@
 //  open a website
 //  validate title
 //
-//  verifies the form field errors
+//  verifies the form field errors using both local commands and reusable commands.
 
 // required libraries
 var webdriverio = require('webdriverio'),
@@ -29,6 +29,11 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
       // bind the commands
       driver.addCommand('verifyFirstNameError', common.verifyFirstNameCheckError.bind(driver));
       driver.addCommand('verifyLastNameError', common.verifyLastNameCheckError.bind(driver));
+      driver.addCommand('verifyAddressError', common.verifyAddressCheckError.bind(driver));
+      driver.addCommand('verifyCityError', common.verifyCityCheckError.bind(driver));
+      driver.addCommand('verifyStateError', common.verifyStateCheckError.bind(driver));
+   
+      driver.addCommand('verifyInvalidStateError', common.verifyInvalidStateError.bind(driver));
 
       driver.init(done);
     } else {
@@ -38,6 +43,11 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
       // bind the commands
       driver.addCommand('verifyFirstNameError', common.verifyFirstNameCheckError.bind(driver));
       driver.addCommand('verifyLastNameError', common.verifyLastNameCheckError.bind(driver));
+      driver.addCommand('verifyAddressError', common.verifyAddressCheckError.bind(driver));
+      driver.addCommand('verifyCityError', common.verifyCityCheckError.bind(driver));
+      driver.addCommand('verifyStateError', common.verifyStateCheckError.bind(driver));
+  
+      driver.addCommand('verifyInvalidStateError', common.verifyInvalidStateError.bind(driver));
 
       done();
     }
@@ -47,7 +57,8 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
   it('should be load correct page and title', function () {
     // load page, then call function()
     return driver
-      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
+      //.url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
+      .url('file:///Users/tkeith/Testing/Tutorial/HTML/WebDriverIOTutorialTest.html')
       // get title, then pass title to function()
       .getTitle().then( function (title) {
         // verify title
@@ -57,15 +68,9 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
       });
   });
 
-  it('should contain 2 errors: first/last name', function () {
-    // call the reusable function
-    driver
-      .verifyFirstNameError(1)
-      .verifyLastNameError(2);
-  });
-
+  // non reusable function method
   it('should contain 5 errors: first/last/address/city/state', function () {
-
+    // not using reusable functions - in commonLib library
     return driver
      .getText("//ul[@class='alert alert-danger']/li[1]").then(function (e) {
         console.log('Error found: ' + e);
@@ -87,6 +92,23 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
         console.log('Error found: ' + e);
         (e).should.be.equal('Please enter state');
       });
+  });
+
+  // reusable function method - reading errors in error div
+  it('should contain 5 errors: first/last/address/city/state', function () {
+    // call the reusable functions - in commonLib library
+    return driver
+      .verifyFirstNameError(1)
+      .verifyLastNameError(2)
+      .verifyAddressError(3)
+      .verifyCityError(4)
+      .verifyStateError(5);
+  });
+
+  // reusable function method - reading errors in form input field
+  it('should contain 1 error: invalid state', function () {
+    // call the reusable functions - in commonLib library
+    return driver.verifyInvalidStateError();
   });
 
   // a "hook" to run after all tests in this block
