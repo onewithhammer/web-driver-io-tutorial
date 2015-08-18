@@ -10,13 +10,15 @@
 //      none
 //
 var verifyFirstNameCheckError = function () {
-    var idx = arguments[0];
+    var idx = arguments[0],
+        callback = arguments[arguments.length - 1];
 
-    return this
+    this
         .getText("//ul[@class='alert alert-danger']/li[" + idx + "]").then( function(e) {
             console.log('Error found: ' + e);
             (e).should.be.equal('Please enter first name');
-        });
+        })
+         .call(callback);
 };
 // export the function
 module.exports.verifyFirstNameCheckError = verifyFirstNameCheckError;
@@ -33,13 +35,15 @@ module.exports.verifyFirstNameCheckError = verifyFirstNameCheckError;
 //      none
 //
 var verifyLastNameCheckError = function () {
-    var idx = arguments[0];
+    var idx = arguments[0],
+        callback = arguments[arguments.length - 1];
 
-    return this
+    this
         .getText("//ul[@class='alert alert-danger']/li[" + idx + "]").then( function(e) {
             console.log('Error found: ' + e);
             (e).should.be.equal('Please enter last name');
-        });
+        })
+        .call(callback);
 };
 // export the function
 module.exports.verifyLastNameCheckError = verifyLastNameCheckError;
@@ -56,13 +60,15 @@ module.exports.verifyLastNameCheckError = verifyLastNameCheckError;
 //      none
 //
 var verifyAddressCheckError = function () {
-    var idx = arguments[0];
+    var idx = arguments[0],
+        callback = arguments[arguments.length - 1];
 
-    return this
+    this
         .getText("//ul[@class='alert alert-danger']/li[" + idx + "]").then( function(e) {
             console.log('Error found: ' + e);
             (e).should.be.equal('Please enter address');
-        });
+        })
+        .call(callback);
 };
 
 // export the function
@@ -81,13 +87,15 @@ module.exports.verifyAddressCheckError = verifyAddressCheckError;
 //      none
 //
 var verifyCityCheckError = function () {
-    var idx = arguments[0];
+    var idx = arguments[0],
+        callback = arguments[arguments.length - 1];
 
-    return this
+    this
         .getText("//ul[@class='alert alert-danger']/li[" + idx + "]").then( function(e) {
             console.log('Error found: ' + e);
             (e).should.be.equal('Please enter city');
-        });
+        })
+        .call(callback);
 };
 
 // export the function
@@ -106,13 +114,15 @@ module.exports.verifyCityCheckError = verifyCityCheckError;
 //      none
 //
 var verifyStateCheckError = function () {
-    var idx = arguments[0];
+    var idx = arguments[0],
+        callback = arguments[arguments.length - 1];
 
-    return this
+    this
         .getText("//ul[@class='alert alert-danger']/li[" + idx + "]").then( function(e) {
             console.log('Error found: ' + e);
             (e).should.be.equal('Please enter state');
-        });
+        })
+        .call(callback);
 };
 
 // export the function
@@ -131,12 +141,14 @@ module.exports.verifyStateCheckError = verifyStateCheckError;
 //      none
 //
 var verifyInvalidStateError = function () {
+    var callback = arguments[arguments.length - 1];
 
-    return this
+    this
         .getAttribute("#state", "placeholder").then( function(e) {
             console.log('Error found: ' + e);
             (e).should.be.equal('Invalid State');
-        });
+        })
+        .call(callback);
 };
 
 // export the function
