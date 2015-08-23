@@ -139,7 +139,7 @@ OR
 Run grunt specifying a config file:<br>
 $ grunt --gruntfile <config-filename> [task name]
 
-````
+```
 $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
 ```
 
@@ -167,13 +167,15 @@ $ cd json db.json
 $ json-server db.json
 ```
 
-see https://github.com/typicode/json-server for project
+see https://github.com/typicode/json-server for project<br>
 see http://jsonplaceholder.typicode.com/ for working demo online of json-server
 
 then run script
 ```
 $ mocha restAPIExample1.js
 ```
+
+use a tool like postman to view the data before and after the script is ran.
 
 ## TO DO
 
