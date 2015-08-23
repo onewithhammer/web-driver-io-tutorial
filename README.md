@@ -57,6 +57,10 @@ List of technologies I choose:
 	* IE (Browser and driver)
 	* Safari (Browser and driver plug-in)
 
+(not really webdriverio related but very good information)
+* supertest - test REST APIs
+* json-server - mock REST API server
+
 Tutorial Files:
 
 | Filename | Description |
@@ -82,6 +86,7 @@ Tutorial Files:
 | Gruntfile-gruntSaucelabs.js |Gruntfile for gruntSaucelabs.js to run against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
+| restAPIExample1.js | Example how to use supertest to test REST APIs
 
 ## TEST
 
@@ -104,7 +109,9 @@ Install firefox browser, if not already installed.
 ```
 $ git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
 $ cd WebDriverIOTutorial
-$ npm install OR $sudo npm install
+$ npm install
+OR 
+$sudo npm install
 ```
 ## RUN TESTS
 Run locally single test using mocha as framework and runner:<br>
@@ -148,6 +155,26 @@ $ wdio [config-filename]
 $ wdio wdio-conf-saucelabs.dataLoopExample2.js
 ```
 
+## Test REST APIs
+Install json-server
+```
+$ npm install -g json-server
+```
+
+Start json-server first with json database file (db.json)
+```
+$ cd json db.json
+$ json-server db.json
+```
+
+see https://github.com/typicode/json-server for project
+see http://jsonplaceholder.typicode.com/ for working demo online of json-server
+
+then run script
+```
+$ mocha restAPIExample1.js
+```
+
 ## TO DO
 
 * use WDIO as the test runner - DONE
@@ -156,9 +183,10 @@ $ wdio wdio-conf-saucelabs.dataLoopExample2.js
 	* see .travis.yml file for more details
 * show more should assertion lib examples
   * show examples deepEqual() 
-  * show examples of property()
-  * show examples of instanceOf()
+  * show examples of property() - DONE
+  * show examples of instanceOf() - DONE
 * show chai assertion lib examples
+* show examples of testing REST API - DONE
 
 
 ## License
