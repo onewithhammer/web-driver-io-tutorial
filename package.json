@@ -21,7 +21,10 @@
     "working examples",
     "test script examples",
     "reusable commands",
-    "selenium"
+    "selenium",
+    "REST API testing",
+    "supertest",
+    "json-server"
   ],
   "dependencies": {
     "mocha": "2.2.5",
