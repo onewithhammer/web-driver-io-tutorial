@@ -29,7 +29,9 @@
     "webdriverio": "3.0.3"
   },
   "devDependencies": {
+    "express": "^4.13.3",
     "grunt": "^0.4.5",
-    "grunt-webdriver": "^0.5.2"
+    "grunt-webdriver": "^0.5.2",
+    "supertest": "^1.0.1"
   }
 }
