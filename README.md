@@ -155,7 +155,7 @@ $ wdio [config-filename]
 $ wdio wdio-conf-saucelabs.dataLoopExample2.js
 ```
 
-## Test REST APIs
+## TEST REST APIs
 Install json-server
 ```
 $ npm install -g json-server
