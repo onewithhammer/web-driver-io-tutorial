@@ -1,0 +1,58 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Smith"
+    },
+    {
+      "id": 2,
+      "firstname": "John",
+      "lastname": "Doe"
+    }
+  ],
+  "order": [
+    {
+      "id": 1,
+      "desc": "First order",
+      "customerId": 1
+    },
+    {
+      "id": 2,
+      "desc": "Repeat Customer",
+      "customerId": 2
+    }
+  ],
+  "item": [
+    {
+      "id": 1,
+      "desc": "Bike",
+      "orderId": 1
+    },
+    {
+      "id": 2,
+      "desc": "Gas",
+      "orderId": 1
+    },
+    {
+      "id": 3,
+      "desc": "Car",
+      "orderId": 1
+    },
+    {
+      "id": 4,
+      "desc": "Table",
+      "orderId": 2
+    },
+    {
+      "id": 5,
+      "desc": "Chairs",
+      "orderId": 2
+    },
+    {
+      "id": 6,
+      "desc": "Dishes",
+      "orderId": 2
+    }
+  ]
+}
