@@ -163,12 +163,12 @@ $ npm install -g json-server
 
 Start json-server first with json database file (db.json)
 ```
-$ cd json db.json
+$ cd json-server
 $ json-server db.json
 ```
 
-see https://github.com/typicode/json-server for project<br>
-see http://jsonplaceholder.typicode.com/ for working demo online of json-server
+see https://github.com/typicode/json-server for github project.<br>
+see http://jsonplaceholder.typicode.com/ for working demo online of json-server.
 
 then run script
 ```
