@@ -1,6 +1,6 @@
 {
   "name": "web-driver-io-tutorial",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Web Driver IO Tutorial with working web site and examples",
   "author": "Tony Keith <tony.keith@yahoo.com>",
   "homepage": "http://tlkeith.com/WebDriverIOTutorialTest.html",
@@ -24,6 +24,7 @@
     "selenium",
     "REST API testing",
     "supertest",
+    "http assertion testing"
     "json-server"
   ],
   "dependencies": {
