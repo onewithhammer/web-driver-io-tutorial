@@ -90,7 +90,8 @@ Tutorial Files:
 
 ## TEST
 
-Create selenium directory:<br>
+Create selenium directory:
+
 ```
 $ mkdir selenium
 ```
@@ -99,6 +100,7 @@ Go to http://www.seleniumhq.org/download/<br>
 Download jar file.  Save/move into the “selenium” directory.<br>
 
 Start the Selenium Stand Alone Server:
+
 ```
  $ java -jar selenium-server-standalone-2.47.1.jar
 ```
@@ -116,6 +118,7 @@ $sudo npm install
 ## RUN TESTS
 Run locally single test using mocha as framework and runner:<br>
 $ mocha [test-script-filename]
+
 ```
 $ mocha tutorial1.js
 ```
@@ -145,23 +148,27 @@ $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
 
 Run locally single test using mocha as framework and wdio as the runner:<br>
 $ wdio [config-filename]
+
 ```
 $ wdio wdio-conf.dataLoopExample2.js
 ```
 
 Run on saucelabs a single test using mocha as framework and wdio as the runner on 2 OS/browsers:<br>
 $ wdio [config-filename]
+
 ```
 $ wdio wdio-conf-saucelabs.dataLoopExample2.js
 ```
 
 ## TEST REST APIs
 Install json-server
+
 ```
 $ npm install -g json-server
 ```
 
 Start json-server first with json database file (db.json)
+
 ```
 $ cd json-server
 $ json-server db.json
@@ -171,11 +178,12 @@ see https://github.com/typicode/json-server for github project.<br>
 see http://jsonplaceholder.typicode.com/ for working demo online of json-server.
 
 then run script
+
 ```
 $ mocha restAPIExample1.js
 ```
 
-use a tool like postman to view the data before and after the script is ran.
+Use a tool like postman to view the data before and after the script is ran.
 
 ## TO DO
 
