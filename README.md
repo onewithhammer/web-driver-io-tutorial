@@ -97,7 +97,8 @@ $ mkdir selenium
 ```
 Install Selenium Stand Alone Server:<br>
 Go to http://www.seleniumhq.org/download/<br>
-Download jar file.  Save/move into the “selenium” directory.<br>
+Download jar file (2.47.1 latest at this time)<br>
+Save/move into the “selenium” directory.<br>
 
 Start the Selenium Stand Alone Server:
 
@@ -113,11 +114,14 @@ $ git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
 $ cd WebDriverIOTutorial
 $ npm install
 OR 
-$sudo npm install
+$ sudo npm install
 ```
 ## RUN TESTS
-Run locally single test using mocha as framework and runner:<br>
+Run locally single test using mocha as framework and runner:
+
+```
 $ mocha [test-script-filename]
+```
 
 ```
 $ mocha tutorial1.js
@@ -131,7 +135,10 @@ $ export SAUCE_ACCESS_KEY=[your saucelabs access key]
 ```
 
 Run grunt with default config file (mocha as framework & grunt as runner):<br>
-$ grunt [task name]
+
+```
+$ grunt [task-name]
+```
 
 ```
 $ grunt webdriver
@@ -139,15 +146,21 @@ $ grunt webdriver
 
 OR
 
-Run grunt specifying a config file:<br>
+Run grunt specifying a config file:
+
+```
 $ grunt --gruntfile <config-filename> [task name]
+```
 
 ```
 $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
 ```
 
-Run locally single test using mocha as framework and wdio as the runner:<br>
+Run locally single test using mocha as framework and wdio as the runner:
+
+```
 $ wdio [config-filename]
+```
 
 ```
 $ wdio wdio-conf.dataLoopExample2.js
