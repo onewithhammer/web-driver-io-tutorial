@@ -130,7 +130,7 @@ $ export SAUCE_ACCESS_KEY=[your saucelabs access key]
 Run grunt with default config file (mocha as framework & grunt as runner):<br>
 $ grunt [task name]
 
-````
+```
 $ grunt webdriver
 ```
 
