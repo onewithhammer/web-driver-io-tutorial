@@ -24,7 +24,7 @@
     "selenium",
     "REST API testing",
     "supertest",
-    "http assertion testing"
+    "http assertion testing",
     "json-server"
   ],
   "dependencies": {
