@@ -210,6 +210,7 @@ Use a tool like postman to view the data before and after the script is ran.
   * show examples of instanceOf() - DONE
 * show chai assertion lib examples
 * show examples of testing REST API - DONE
+	* use custom assertions - DONE
 
 
 ## License
