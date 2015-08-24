@@ -192,7 +192,7 @@ use a tool like postman to view the data before and after the script is ran.
 
 
 ## License
-MIT
+MIT © 2015 Tony Keith <tony.keith@yahoo.com>
 
 
 
