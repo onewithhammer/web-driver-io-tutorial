@@ -40,6 +40,43 @@
 var request = require('supertest'),
    should = require('should');
 
+// Custom assertions makes the code cleaner
+should.Assertion.add('validCustomer', function(first, last, id) {
+  this.params = { operator: 'to be a valid customer' };
+
+  var config = this.obj;
+
+  config.should.have.property('firstname').and.be.equal(first);
+  config.firstname.should.be.instanceOf(String);
+  config.should.have.property('lastname').and.be.equal(last);
+  config.lastname.should.be.instanceOf(String);
+  config.should.have.property('id').and.be.equal(id);
+  config.id.should.be.instanceOf(Number);
+}, true);
+
+should.Assertion.add('validOrder', function(desc, id) {
+  this.params = { operator: 'to be a valid order' };
+
+  var config = this.obj;
+
+  config.should.have.property('desc').and.be.equal(desc);
+  config.desc.should.be.instanceOf(String);
+  config.should.have.property('customerId').and.be.equal(id);
+  config.id.should.be.instanceOf(Number);
+}, true);
+
+should.Assertion.add('validItem', function(desc, id) {
+  this.params = { operator: 'to be a valid item' };
+
+  var config = this.obj;
+
+  config.should.have.property('desc').and.be.equal(desc);
+  config.desc.should.be.instanceOf(String);
+  config.should.have.property('orderId').and.be.equal(id);
+  config.id.should.be.instanceOf(Number);
+}, true);
+
+
 describe('Test Example Order System Rest APIs using supertest', function() {
   var app = request('http://localhost:3000');
  
@@ -56,13 +93,14 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect('Content-Type', /json/)
       .end(function(err, res) {
         if (err) return done(err);
-
+        //  individual assertions
         res.body.should.have.property('firstname').and.be.equal("John");
         res.body.firstname.should.be.instanceOf(String);
         res.body.should.have.property('lastname').and.be.equal("Smith");
         res.body.lastname.should.be.instanceOf(String);
         res.body.should.have.property('id').and.be.equal(1);
         res.body.id.should.be.instanceOf(Number);
+        console.log("Customer #1 Validated");
         done();
       });
   });
@@ -75,12 +113,9 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect('Content-Type', /json/)
       .end(function(err, res) {
         if (err) return done(err);
-        res.body.should.have.property('firstname').and.be.equal("John");
-        res.body.firstname.should.be.instanceOf(String);
-        res.body.should.have.property('lastname').and.be.equal("Doe");
-        res.body.lastname.should.be.instanceOf(String);
-        res.body.should.have.property('id').and.be.equal(2);
-        res.body.id.should.be.instanceOf(Number);
+        // customer assertion - validCustomer()
+        res.body.should.have.validCustomer("John", "Doe", 2);
+        console.log("Customer #2 Validated");
         done();
       });
   });
@@ -90,7 +125,7 @@ describe('Test Example Order System Rest APIs using supertest', function() {
   //    desc: String,
   //    customerId:  Number
   //   }
-  it('Validate Order for Customer #1', function (done) {
+  it('Validate Order #1 for Customer #1', function (done) {
     app
       .get('/order?customerId=1')
       .set('Accept', 'application/json')
@@ -98,15 +133,14 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect('Content-Type', /json/)
       .end(function(err, res) {
         if (err) return done(err);
-        res.body[0].should.have.property('desc').and.be.equal("First order");
-        res.body[0].desc.should.be.instanceOf(String);
-        res.body[0].should.have.property('customerId').and.be.equal(1);
-        res.body[0].customerId.should.be.instanceOf(Number);
+        // customer assertion - validOrder()
+        res.body[0].should.have.validOrder("First order", 1);
+        console.log("Order #1 for Customer #1 Validated");
         done();
       });
   });
 
-  it('Validate Order for Customer #2', function (done) {
+  it('Validate Order #1 for Customer #2', function (done) {
     app
       .get('/order?customerId=2')
       .set('Accept', 'application/json')
@@ -114,10 +148,9 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect('Content-Type', /json/)
       .end(function(err, res) {
         if (err) return done(err);
-        res.body[0].should.have.property('desc').and.be.equal("Repeat Customer");
-        res.body[0].desc.should.be.instanceOf(String);
-        res.body[0].should.have.property('customerId').and.be.equal(2);
-        res.body[0].customerId.should.be.instanceOf(Number);
+        // customer assertion - validOrder()
+        res.body[0].should.have.validOrder("Repeat Customer", 2);
+        console.log("Order #1 for Customer #2 Validated");
         done();
       });
   });
@@ -136,21 +169,12 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect('Content-Type', /json/)
       .end(function(err, res) {
         if (err) return done(err);
+        console.log("Found items for order #1, customer #1");
         res.body.should.be.instanceof(Array).and.have.lengthOf(3);
-        res.body[0].should.have.property('desc').and.be.equal("Bike");
-        res.body[0].desc.should.be.instanceOf(String);
-        res.body[0].should.have.property('orderId').and.be.equal(1);
-        res.body[0].orderId.should.be.instanceOf(Number);
-
-        res.body[1].should.have.property('desc').and.be.equal("Gas");
-        res.body[1].desc.should.be.instanceOf(String);
-        res.body[1].should.have.property('orderId').and.be.equal(1);
-        res.body[1].orderId.should.be.instanceOf(Number);
-
-        res.body[2].should.have.property('desc').and.be.equal("Car");
-        res.body[2].desc.should.be.instanceOf(String);
-        res.body[2].should.have.property('orderId').and.be.equal(1);
-        res.body[2].orderId.should.be.instanceOf(Number);
+        res.body[0].should.have.validItem("Bike", 1);
+        res.body[1].should.have.validItem("Gas", 1);
+        res.body[2].should.have.validItem("Car", 1);
+        console.log("Items for Order #1 for Customer #1 Validated");
         done();
       });
   });
@@ -165,12 +189,10 @@ describe('Test Example Order System Rest APIs using supertest', function() {
         if (err) return done(err);
         console.log("Found items for order #1, customer #2");
         res.body.should.be.instanceof(Array).and.have.lengthOf(3);
-        res.body[0].should.have.property('desc').and.be.a.String.and.be.equal("Table");
-        res.body[0].should.have.property('orderId').and.be.a.Number.and.be.equal(2);
-        res.body[1].should.have.property('desc').and.be.a.String.and.be.equal("Chairs");
-        res.body[1].should.have.property('orderId').and.be.a.Number.and.be.equal(2);
-        res.body[2].should.have.property('desc').and.be.a.String.and.be.equal("Dishes");
-        res.body[2].should.have.property('orderId').and.be.a.Number.and.be.equal(2);
+        res.body[0].should.have.validItem("Table", 2);
+        res.body[1].should.have.validItem("Chairs", 2);
+        res.body[2].should.have.validItem("Dishes", 2);
+        console.log("Items for Order #1 for Customer #2 Validated");
         done();
       });
   });
@@ -186,15 +208,14 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect('Content-Type', /json/)
       .end(function(err, res) {
         if (err) return done(err);
-        res.body.should.have.property('firstname').and.be.equal("Jane");
-        res.body.should.have.property('lastname').and.be.equal("Doe");
-        res.body.should.have.property('id').and.be.equal(3);
+        res.body.should.have.validCustomer("Jane", "Doe", 3);
+        console.log("New Customer #3 Created");
         done();
       });
   });
 
- it('Create New Order for Customer #3', function (done) {
-    var order = { desc : 'Business order', customerId : 3};
+ it('Create New Order #1 for Customer #3', function (done) {
+    var order = { desc : 'Business Order', customerId : 3};
     app
       .post('/order')
       .send(order)
@@ -203,8 +224,8 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect('Content-Type', /json/)
       .end(function(err, res) {
         if (err) return done(err);
-        res.body.should.have.property('desc').and.be.equal("Business order");
-        res.body.should.have.property('customerId').and.be.equal(3);
+        res.body.should.have.validOrder("Business Order", 3);
+        console.log("New Order #1 for Customer #3 Created");
         done();
       });
   });
@@ -223,8 +244,7 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .end(function(err, res) {
         if (err) return done(err);
         console.log("Added item #1 for order #1, customer #3");
-        res.body.should.have.property('desc').and.be.equal('Books');
-        res.body.should.have.property('orderId').and.be.equal(3);
+        res.body.should.have.validItem("Books", 3);
       });
 
       app
@@ -236,12 +256,10 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .end(function(err, res) {
         if (err) return done(err);
         console.log("Added item #2 for order #1, customer #3");
-        res.body.should.have.property('desc').and.be.equal('Shelf');
-        res.body.should.have.property('orderId').and.be.equal(3);
+        res.body.should.have.validItem("Shelf", 3);
         done();
       });
   });
-
 
   it('Delete Items, then Order then Customer all for #3', function (done) {
 
