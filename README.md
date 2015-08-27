@@ -87,6 +87,7 @@ Tutorial Files:
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
 | restAPIExample1.js | Example how to use supertest to test REST APIs
+| dbDataLoopExample.js | Example how to use database (mongoDB) driven testing
 
 ## TEST
 
@@ -197,6 +198,15 @@ $ mocha restAPIExample1.js
 ```
 
 Use a tool like postman to view the data before and after the script is ran.
+
+## DB TEST
+Install and make sure mongoDB is running locally
+
+then run script
+
+```
+$ mocha dbDataLoopExample.js
+```
 
 ## TO DO
 
