@@ -57,9 +57,12 @@ List of technologies I choose:
 	* IE (Browser and driver)
 	* Safari (Browser and driver plug-in)
 
-(not really webdriverio related but very good information)
+(Not really webdriverio related but very good information)
 * supertest - test REST APIs
 * json-server - mock REST API server
+* mongodb + promise-mongo - test database driven testing
+
+
 
 Tutorial Files:
 
@@ -199,7 +202,7 @@ $ mocha restAPIExample1.js
 
 Use a tool like postman to view the data before and after the script is ran.
 
-## DB TEST
+## USE DB TEST DATA
 Install and make sure mongoDB is running locally
 
 then run script
