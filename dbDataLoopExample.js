@@ -98,17 +98,19 @@ describe('Loop Test with DB Data for Web Driver IO- Tutorial Test Page Website',
     });
   });
 
-  it('should process data',function() {
+  it('should process data - sequentially',function() {
     // Special thanks to Christian Bromann <mail@christian-bromann.com> for help with this code.
     var loop = Q();
     return db.user.find().then(cur.toArray).then(function(res) {
       console.log('Records:', res.length);
       res.forEach(function(d) {
         loop = loop.then(function() {
+          // execute the next function after the previous has resolved successfully
           console.log(d.fname, d.lname);
           return loopTest(driver, d.fname, d.lname);
         });
       });
+      // return last so mocha knows all records are finished.
       return loop;
     });
   });
