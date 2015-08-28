@@ -41,8 +41,8 @@ var linkArray = [
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/restAPIExample1.js", "name" : "restAPIExample1.js"},
 {"link" : "https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/dbDataLoopExample.js", "name" : "dbDataLoopExample.js"}
 ];
-  // set timeout to 180 seconds since there are so many links to check
-	this.timeout(180000);
+  // set timeout to 240 seconds since there are so many links to check
+	this.timeout(240000);
   var driver = {};
 
   // hook to run before tests
