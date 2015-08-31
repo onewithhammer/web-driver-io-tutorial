@@ -86,7 +86,7 @@ Tutorial Files:
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | Gruntfile.js | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
 | Gruntfile-dataLoopExample2.js | Gruntfile for dataLoopExample2.js to run against saucelabs
-| Gruntfile-gruntSaucelabs.js |Gruntfile for gruntSaucelabs.js to run against saucelabs
+| Gruntfile-gruntSaucelabs.js | Gruntfile for gruntSaucelabs.js to run against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
 | restAPIExample1.js | Example how to use supertest to test REST APIs
@@ -138,7 +138,7 @@ $ export SAUCE_USERNAME=[your saucelabs username]
 $ export SAUCE_ACCESS_KEY=[your saucelabs access key]
 ```
 
-Run grunt with default config file (mocha as framework & grunt as runner):<br>
+Run grunt with default config file - Gruntfile.js using mocha as framework & grunt as runner. The config file will run a few test files against saucelabs with different OS/browser combinations.
 
 ```
 $ grunt [task-name]
@@ -171,7 +171,10 @@ $ wdio wdio-conf.dataLoopExample2.js
 ```
 
 Run on saucelabs a single test using mocha as framework and wdio as the runner on 2 OS/browsers:<br>
+
+```
 $ wdio [config-filename]
+```
 
 ```
 $ wdio wdio-conf-saucelabs.dataLoopExample2.js
@@ -201,6 +204,16 @@ $ mocha restAPIExample1.js
 ```
 
 Use a tool like postman to view the data before and after the script is ran.
+
+Use it.skip() to skip specs.
+
+Note: json-server will update the db.json file.
+
+To restore the original file (stop server first):
+
+```
+cp db-bak.json db.json
+```
 
 ## USE DB TEST DATA
 Install and make sure mongoDB is running locally
