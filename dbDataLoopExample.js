@@ -51,7 +51,7 @@ var loopTest = function (driver, fname, lname) {
       });
 };
 
-describe('Loop Test with DB Data for Web Driver IO- Tutorial Test Page Website', function() {
+describe('Loop Test with DB Data for Web Driver IO - Tutorial Test Page Website', function() {
 
   // set timeout to 20 seconds
   this.timeout(20000);
@@ -94,11 +94,12 @@ describe('Loop Test with DB Data for Web Driver IO- Tutorial Test Page Website',
       console.log('Added: ' + res.fname + ' ' + res.lname);
       (res.fname).should.be.equal('Jim');
       (res.lname).should.be.equal('Smith');
+      // only one done()
       done();
     });
   });
 
-  it('should process data - sequentially',function() {
+  it('should process data records - sequentially',function() {
     // Special thanks to Christian Bromann <mail@christian-bromann.com> for help with this code.
     var loop = Q();
     return db.user.find().then(cur.toArray).then(function(res) {
