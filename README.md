@@ -216,9 +216,7 @@ cp db-bak.json db.json
 ```
 
 ## USE DB TEST DATA
-Install and make sure mongoDB is running locally
-
-then run script
+Install and make sure mongoDB is running locally then run script
 
 ```
 $ mocha dbDataLoopExample.js
