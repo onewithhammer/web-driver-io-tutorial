@@ -83,6 +83,7 @@ Tutorial Files:
 | linkTextURL2.js | Link Text/URL Test By Looping Through Elements
 | cssValidation1.js | Example how to validate several CSS properties
 | dropDownMenu1.js | Example how to validate dropdown menu selections
+| carouselExample1.js | Example how to validate image carousels
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | Gruntfile.js | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
