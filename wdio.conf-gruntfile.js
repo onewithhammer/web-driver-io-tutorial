@@ -33,16 +33,16 @@ exports.config = {
     // file.
     //
     specs: [
-        'tutorial1.js',
-        'copyright1.js',
-        'cssValidation1.js',
+        //'tutorial1.js',
+        'copyright1.js'
+        //'cssValidation1.js',
         //'dataLoopExample2.js',
-        'formFillSubmit1.js',
-        'formFieldValidation.js',
+        //'formFillSubmit1.js',
+        //'formFieldValidation.js',
         //'linkTextURL1.js',
         //'linkTextURL2.js',
-        'carouselExample1.js',
-        'showHideVerify1.js'
+        //'carouselExample1.js',
+        //'showHideVerify1.js'
     ],
     // Patterns to exclude.
     exclude: [
