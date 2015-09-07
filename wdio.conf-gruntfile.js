@@ -40,8 +40,8 @@ exports.config = {
         'dataLoopExample2.js',
         'formFillSubmit1.js',
         //'formFieldValidation.js',
-        'linkTextURL1.js'
-        //'linkTextURL2.js',
+        'linkTextURL1.js',
+        'linkTextURL2.js'
         //'carouselExample1.js',
         //'showHideVerify1.js'
     ],
