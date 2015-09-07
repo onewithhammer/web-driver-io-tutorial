@@ -105,7 +105,7 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
   });
 
   // reusable function method - reading errors in form input field
-  it('should contain 1 error: invalid state', function () {
+  it.skip('should contain 1 error: invalid state', function () {
     // call the reusable functions - in commonLib library
     return driver.verifyInvalidStateError();
   });
