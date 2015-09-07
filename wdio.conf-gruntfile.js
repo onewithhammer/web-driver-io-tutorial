@@ -35,8 +35,8 @@ exports.config = {
     specs: [
         'tutorial1.js',
         'copyright1.js',
-        'cssValidation1.js'
-        //'dataLoopExample2.js',
+        'cssValidation1.js',
+        'dataLoopExample2.js',
         //'formFillSubmit1.js',
         //'formFieldValidation.js',
         //'linkTextURL1.js',
