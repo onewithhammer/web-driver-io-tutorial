@@ -1,6 +1,6 @@
 {
   "name": "web-driver-io-tutorial",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Web Driver IO Tutorial with working web site and examples",
   "author": "Tony Keith <tony.keith@yahoo.com>",
   "homepage": "http://tlkeith.com/WebDriverIOTutorialTest.html",
@@ -29,15 +29,15 @@
     "database driver test data"
   ],
   "devDependencies": {
-    "express": "^5.0.0-alpha.2",
+    "express": "*",
     "grunt": "*",
-    "grunt-webdriver": "*",
-    "mocha": "*",
+    "grunt-webdriver": "^1.0.0",
+    "mocha": "^2.3.0",
+    "mongodb": "^*",
+    "promise-mongo": "*",
     "q": "^2.0.3",
-    "should": "^7.0.4",
+    "should": "^7.1.0",
     "supertest": "*",
-    "webdriverio": "*",
-    "mongodb": "*",
-    "promise-mongo": "*"
+    "webdriverio": "*"
   }
 }
