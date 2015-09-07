@@ -3,7 +3,8 @@
 // This grunt configuration can be run locally or from Travis CL
 
 // To Run:
-//  $ grunt webdriver
+//  $ grunt webdriver or wdio wdio.conf-gruntfile.js
+
 exports.config = {
 
     host: (process.env.BUILD_NUMBER) ? 'localhost':'ondemand.saucelabs.com',
@@ -38,8 +39,8 @@ exports.config = {
         'cssValidation1.js',
         'dataLoopExample2.js',
         'formFillSubmit1.js',
-        'formFieldValidation.js',
-        'linkTextURL1.js'
+        'formFieldValidation.js'
+        //'linkTextURL1.js'
         //'linkTextURL2.js',
         //'carouselExample1.js',
         //'showHideVerify1.js'
