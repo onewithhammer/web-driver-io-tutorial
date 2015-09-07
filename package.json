@@ -10,7 +10,7 @@
     "url": "https://github.com/onewithhammer/web-driver-io-tutorial"
   },
   "scripts": {
-    "test": "grunt webdriver"
+    "test": "wdio wdio.conf-gruntfile.js"
   },
   "keywords": [
     "webdriverio",
