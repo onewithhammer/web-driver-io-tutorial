@@ -37,7 +37,7 @@ exports.config = {
         'copyright1.js',
         'cssValidation1.js',
         'dataLoopExample2.js',
-        //'formFillSubmit1.js',
+        'formFillSubmit1.js'
         //'formFieldValidation.js',
         //'linkTextURL1.js',
         //'linkTextURL2.js',
