@@ -140,7 +140,7 @@ $ export SAUCE_USERNAME=[your saucelabs username]
 $ export SAUCE_ACCESS_KEY=[your saucelabs access key]
 ```
 
-Run grunt with default config file - Gruntfile.js using mocha as framework & grunt as runner. The config file will run a few test files against saucelabs with different OS/browser combinations.
+Run grunt with default config file - Gruntfile.js using mocha as framework & wdio as runner. The config file will run a few test files against saucelabs with different OS/browser combinations.
 
 ```
 $ grunt [task-name]
@@ -157,6 +157,8 @@ Run grunt specifying a config file:
 ```
 $ grunt --gruntfile <config-filename> [task name]
 ```
+
+Run locally a single test using mocha as framework and wdio as the runner on 2 OS/browsers:<br>
 
 ```
 $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
