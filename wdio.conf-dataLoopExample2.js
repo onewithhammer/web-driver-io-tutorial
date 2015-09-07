@@ -3,7 +3,7 @@
 // You must have Firefox and Chrome installed for this script to run properly
 //
 // To Run:
-//  $ wdio wdio.conf-dataLoopExample2.js
+//  $ wdio wdio.conf-dataLoopExample2.js or $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
 
 exports.config = {
     
@@ -94,7 +94,7 @@ exports.config = {
     // Test reporter for stdout.
     // The following are supported: dot (default), spec and xunit
     // see also: http://webdriver.io/guide/testrunner/reporters.html
-    reporter: 'dot',
+    reporter: 'spec',
     
     //
     // =====
