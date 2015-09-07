@@ -86,13 +86,21 @@ Tutorial Files:
 | carouselExample1.js | Example how to validate image carousels
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
+| restAPIExample1.js | Example how to use supertest to test REST APIs
+| dbDataLoopExample.js | Example how to use database (mongoDB) driven testing
+
+Configuration Files:
+
+| Filename | Description |
+| :--|:--|
+| wdio.conf-gruntfile.js | Example wdio config with 3 browser/OS configs against saucelabs
+| wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
+| wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
 | Gruntfile.js | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
 | Gruntfile-dataLoopExample2.js | Gruntfile for dataLoopExample2.js to run against saucelabs
 | Gruntfile-gruntSaucelabs.js | Gruntfile for gruntSaucelabs.js to run against saucelabs
-| wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
-| wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
-| restAPIExample1.js | Example how to use supertest to test REST APIs
-| dbDataLoopExample.js | Example how to use database (mongoDB) driven testing
+
+
 
 ## TEST
 
