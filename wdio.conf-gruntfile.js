@@ -43,7 +43,8 @@ exports.config = {
         'linkTextURL1.js',
         'linkTextURL2.js',
         'carouselExample1.js',
-        'showHideVerify1.js'
+        'showHideVerify1.js',
+        'dropDownMenu1.js'
     ],
     // Patterns to exclude.
     exclude: [
