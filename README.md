@@ -249,6 +249,11 @@ $ mocha dbDataLoopExample.js
 * show chai assertion lib examples
 * show examples of testing REST API - DONE
 	* use custom assertions - DONE
+* show examples of screenshots - DONE
+
+## Change Log
+
+see the [CHANGELOG](https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/CHANGELOG.md)
 
 
 ## License
