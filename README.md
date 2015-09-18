@@ -84,10 +84,12 @@ Tutorial Files:
 | cssValidation1.js | Example how to validate several CSS properties
 | dropDownMenu1.js | Example how to validate dropdown menu selections
 | carouselExample1.js | Example how to validate image carousels
+| screenShot1.js | Example how to take screenshots at different browser widths
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | restAPIExample1.js | Example how to use supertest to test REST APIs
 | dbDataLoopExample.js | Example how to use database (mongoDB) driven testing
+
 
 Configuration Files:
 
