@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.3.2 (2015-09-21)
+* fixed links in README
+
 ## v1.3.1 (2015-09-17)
 * added screen shot example - screenShot1.js
 * updated keywords

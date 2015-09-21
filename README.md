@@ -9,11 +9,11 @@ This is the README for the Web Driver IO Tutorial.
 Please see my blog for a complete description of the files and much more
 information located at:
 
-http://webdriveriotutorial.blogspot.com/
+[Blog](http://webdriveriotutorial.blogspot.com/)
 
 The live working test site for the tutorial is located at:
 
-http://tlkeith.com/WebDriverIOTutorialTest.html
+[Working test site](http://tlkeith.com/WebDriverIOTutorialTest.html)
 
 
 ## Background
