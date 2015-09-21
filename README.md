@@ -13,7 +13,7 @@ information located at:
 
 The live working test site for the tutorial is located at:
 
-[Working test site](http://tlkeith.com/WebDriverIOTutorialTest.html)
+[Working Test Site](http://tlkeith.com/WebDriverIOTutorialTest.html)
 
 
 ## Background
