@@ -76,7 +76,7 @@ Tutorial Files:
 | dynamicBrowser.js | Dynamically Invoke Different Browsers
 | callbackPromise.js | Compares callbacks VS promises
 | debugExample1.js  | Example Shows Several Methods on How to Debug
-| formFieldValidation.js | Example of Validating Errors
+| formFieldValidation.js | Example of Validating Form Field Errors
 | commonLib.js | Example of Reusable Functions (library)
 | dataLoopExample1.js | Looping Static Data to Validate URL Link/Text
 | dataLoopExample2.js | Looping Static Data to Populate Form Fields
@@ -85,6 +85,7 @@ Tutorial Files:
 | dropDownMenu1.js | Example how to validate dropdown menu selections
 | carouselExample1.js | Example how to validate image carousels
 | screenShot1.js | Example how to take screenshots at different browser widths
+| autoComplete1.js | Example how to select and validate autocomplete input field
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | restAPIExample1.js | Example how to use supertest to test REST APIs
@@ -250,6 +251,7 @@ $ mocha dbDataLoopExample.js
 * show examples of testing REST API - DONE
 	* use custom assertions - DONE
 * show examples of screenshots - DONE
+* show example of autocomplete field - DONE
 
 ## Change Log
 
@@ -257,7 +259,7 @@ see the [CHANGELOG](https://github.com/onewithhammer/web-driver-io-tutorial/blob
 
 
 ## License
-MIT © 2015 Tony Keith <tony.keith@yahoo.com>
+MIT © 2015 Tony Keith <tony.keith@yahoo.com> [WEBSITE](http://www.tlkeith.com)
 
 
 

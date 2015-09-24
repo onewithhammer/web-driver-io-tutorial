@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.3.3 (2015-09-23)
+* added autocomplete example - autoComplete1.js
+
 ## v1.3.2 (2015-09-21)
 * fixed links in README
 
