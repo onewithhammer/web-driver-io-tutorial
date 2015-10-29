@@ -87,7 +87,7 @@ Tutorial Files:
 | carouselExample1.js | Example how to validate image carousels
 | screenShot1.js | Example how to take screenshots at different browser widths
 | autoComplete1.js | Example how to select and validate autocomplete input field
-| iframe1.js | Example how to select from iframes on a page
+| iframe1.js | Example how to select / interact multiple iframes on a page
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | restAPIExample1.js | Example how to use supertest to test REST APIs
