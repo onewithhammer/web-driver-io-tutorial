@@ -69,6 +69,7 @@ Tutorial Files:
 | Filename | Description |
 | :--|:--|
 | tutorial1.js | Title Test - Open page and verify title
+| tutorial1-ES6.js | Title Test - Open page and verify title using ES6 generator
 | linkTextURL1.js | Link Text/URL Test - Verify Link Text and URL
 | copyright1.js | Copyright Test - Verify Link Text and URL
 | formFillSubmit1.js | Populate Form Fields and Submit
@@ -86,6 +87,7 @@ Tutorial Files:
 | carouselExample1.js | Example how to validate image carousels
 | screenShot1.js | Example how to take screenshots at different browser widths
 | autoComplete1.js | Example how to select and validate autocomplete input field
+| iframe1.js | Example how to select from iframes on a page
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | restAPIExample1.js | Example how to use supertest to test REST APIs
@@ -252,6 +254,10 @@ $ mocha dbDataLoopExample.js
 	* use custom assertions - DONE
 * show examples of screenshots - DONE
 * show example of autocomplete field - DONE
+* show examples using ES6 generator
+* show examples using iframe - DONE
+* show examples using control characters
+* show examples using modals
 
 ## Change Log
 

@@ -1,6 +1,6 @@
 {
   "name": "web-driver-io-tutorial",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "WebDriverIO Tutorial with working web site and examples",
   "author": "Tony Keith <tony.keith@yahoo.com>",
   "homepage": "http://tlkeith.com/WebDriverIOTutorialTest.html",
@@ -29,7 +29,8 @@
     "supertest",
     "http assertion testing",
     "json-server",
-    "database driven test data"
+    "database driven test data",
+    "ES6 Generator"
   ],
   "devDependencies": {
     "express": "*",

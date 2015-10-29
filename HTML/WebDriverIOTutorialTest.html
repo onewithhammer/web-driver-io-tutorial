@@ -81,7 +81,7 @@
 	<div class="col-md-8 text-center col-md-offset-2">
 		<h1>Web Driver IO - Tutorial Test Page</h1>
 		<div>
-			<h4>This test page is used to demo real working test script examples.
+			<h4>This test page is used to demo real working test script examples.</h4>
 		</div>
 
 		It is meant to be simple and plain to demo the code, not to show off my expertise in HTML/CSS.<br><br>Please see the blog article located <a href="http://webdriveriotutorial.blogspot.com/">here</a> for full details and all test scripts can be downloaded from <a href="https://github.com/onewithhammer/web-driver-io-tutorial">github</a>.<br><br>
@@ -470,6 +470,21 @@
 				<label for="autocomplete">Select a NFL Team Name: </label>
 				<input id="autocomplete">
 			</div>
+			<br>
+			<br>
+			Example of interacting with multiple iframes on a page
+			<div>
+				<strong>"Main"</strong> Iframe<br>
+				<iframe src="http://www.tlkeith.com" width=300 height=500 name="main">
+  				<p>Your browser does not support iframes.</p>
+				</iframe>
+			</div>
+			<div>
+				<strong>"Contact"</strong> Iframe<br>
+				<iframe src="http://www.tlkeith.com/contact.html" width=300 height=500 name="contact">
+  				<p>Your browser does not support iframes.</p>
+				</iframe>
+			</div>
 		</div>
 	</div>
 	<div class="col-md-8 col-md-offset-2">
@@ -478,7 +493,7 @@
 		<footer>
 			<center>
 				<p id="copyright">Tony Keith - tlkeith.com @ 2015 - All rights reserved.</p>
-				<p>Last Update: <b>09.23.15</b><br><p>
+				<p>Last Update: <b>10.29.15</b><br><p>
 			</center>
 		</footer>
 		<script src="assets/js/bootstrap.js"></script>

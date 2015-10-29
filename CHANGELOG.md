@@ -1,5 +1,9 @@
 # CHANGELOG
 
+
+## v1.3.4 (2015-10-29)
+* added iframe example - iframe1.js
+
 ## v1.3.3 (2015-09-23)
 * added autocomplete example - autoComplete1.js
 
