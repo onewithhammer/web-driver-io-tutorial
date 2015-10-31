@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## v1.3.5 (2015-10-31)
+* added modal example - modal1.js
 
 ## v1.3.4 (2015-10-29)
 * added iframe example - iframe1.js

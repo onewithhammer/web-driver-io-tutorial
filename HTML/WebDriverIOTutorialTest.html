@@ -246,6 +246,14 @@
 					</tr>
 					<tr>
 						<td>
+							 Example how to interact with a modal window
+						</td>
+						<td>
+							<a href="https://github.com/onewithhammer/web-driver-io-tutorial/blob/master/modal1.js">modal1.js</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
 							 Example how to use cloud based test site (saucelabs)
 						</td>
 						<td>
@@ -480,6 +488,31 @@
 			</div>
 			<br>
 			<br>
+			Example Modal<br>
+			<!-- Button trigger modal -->
+			<button type="button" id="modalbutton" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  Click for Modal
+			</button>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Policy</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Agreement</h4>
+			      </div>
+			      <div class="modal-body">
+			        I agree to the following...
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" id="closebutton" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" id="agreebutton" class="btn btn-primary">Agree & Save</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<br>
+			<br>
 			Example of interacting with multiple iframes on a page
 			<div>
 				<strong>"Main"</strong> Iframe<br>
@@ -501,7 +534,7 @@
 		<footer>
 			<center>
 				<p id="copyright">Tony Keith - tlkeith.com @ 2015 - All rights reserved.</p>
-				<p>Last Update: <b>10.29.15</b><br><p>
+				<p>Last Update: <b>10.31.15</b><br><p>
 			</center>
 		</footer>
 		<script src="assets/js/bootstrap.js"></script>

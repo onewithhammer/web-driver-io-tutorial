@@ -88,6 +88,7 @@ Tutorial Files:
 | screenShot1.js | Example how to take screenshots at different browser widths
 | autoComplete1.js | Example how to select and validate autocomplete input field
 | iframe1.js | Example how to select / interact multiple iframes on a page
+| modal1.js | Example how to interact with a modal window (bootstrap)
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | restAPIExample1.js | Example how to use supertest to test REST APIs
@@ -116,13 +117,13 @@ $ mkdir selenium
 ```
 Install Selenium Stand Alone Server:<br>
 Go to http://www.seleniumhq.org/download/<br>
-Download jar file (2.47.1 latest at this time)<br>
+Download jar file (2.48.2 latest at this time)<br>
 Save/move into the “selenium” directory.<br>
 
 Start the Selenium Stand Alone Server:
 
 ```
- $ java -jar selenium-server-standalone-2.47.1.jar
+ $ java -jar selenium-server-standalone-2.48.2.jar
 ```
 
 Firefox<br>
@@ -257,7 +258,7 @@ $ mocha dbDataLoopExample.js
 * show examples using ES6 generator
 * show examples using iframe - DONE
 * show examples using control characters
-* show examples using modals
+* show examples using modal - DONE
 
 ## Change Log
 
