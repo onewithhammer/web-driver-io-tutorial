@@ -16,7 +16,7 @@ var webdriverio = require('webdriverio'),
   should = require('should');
 
 // a test script block or suite
-describe('Title Test for Web Driver IO - Tutorial Test Page Website', function() {
+describe('Iframe Test for Web Driver IO - Tutorial Test Page Website', function() {
 
   // set timeout to 10 seconds
 	this.timeout(10000);
