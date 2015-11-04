@@ -1,5 +1,9 @@
 # CHANGELOG
 
+
+## v1.3.6 (2015-11-04)
+* added selectbox example - selectbox1.js
+
 ## v1.3.5 (2015-10-31)
 * added modal example - modal1.js
 

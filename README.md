@@ -89,6 +89,7 @@ Tutorial Files:
 | autoComplete1.js | Example how to select and validate autocomplete input field
 | iframe1.js | Example how to select / interact multiple iframes on a page
 | modal1.js | Example how to interact with a modal window (bootstrap)
+| selectBox1.js | Exmample how to interact with selectbox
 | saucelabs.js | Example how to use cloud based test site (saucelabs)
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | restAPIExample1.js | Example how to use supertest to test REST APIs
@@ -259,6 +260,7 @@ $ mocha dbDataLoopExample.js
 * show examples using iframe - DONE
 * show examples using control characters
 * show examples using modal - DONE
+* show examples of selectbox - DONE
 
 ## Change Log
 
