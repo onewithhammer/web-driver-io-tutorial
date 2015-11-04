@@ -36,7 +36,7 @@ describe('Selectbox Test for Web Driver IO - Tutorial Test Page Website', functi
   it('should be load correct page and title', function () {
     // load page, then call function()
     return driver
-      .url('file:///Users/tkeith/Testing/Tutorial/HTML/WebDriverIOTutorialTest.html')
+      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
       // get title, then pass title to function()
       .getTitle().then( function (title) {
         // verify title
