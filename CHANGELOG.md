@@ -1,8 +1,13 @@
 # CHANGELOG
 
 
+## v1.3.8 (2015-11-13)
+* added ES6 examples
+	* tutorial1-ES6.js & wdio.conf-tutorial1-ES6.js
+	* copyright1-ES6.js & wdio.conf-copyright1-ES6.js
+
 ## v1.3.7 (2015-11-13)
-* updatad modal example using 2 methods - modal1.js
+* updated modal example using 2 methods - modal1.js
 
 ## v1.3.6 (2015-11-04)
 * added selectbox example - selectbox1.js
