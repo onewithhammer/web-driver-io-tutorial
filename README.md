@@ -69,9 +69,10 @@ Tutorial Files:
 | Filename | Description |
 | :--|:--|
 | tutorial1.js | Title Test - Open page and verify title
-| tutorial1-ES6.js | Title Test - Open page and verify title using ES6 generator
+| tutorial1-ES6.js | Title Test - Open page and verify title using ES6 Generator
 | linkTextURL1.js | Link Text/URL Test - Verify Link Text and URL
-| copyright1.js | Copyright Test - Verify Link Text and URL
+| copyright1.js | Copyright Test - Verify Copyright Text
+| copyright1-ES6.js | Copyright Test - Verify Copyright Text using ES6 Generator
 | formFillSubmit1.js | Populate Form Fields and Submit
 | showHideVerify1.js | Click Show/Hide Button and Verify Text
 | dynamicBrowser.js | Dynamically Invoke Different Browsers
@@ -256,7 +257,7 @@ $ mocha dbDataLoopExample.js
 	* use custom assertions - DONE
 * show examples of screenshots - DONE
 * show example of autocomplete field - DONE
-* show examples using ES6 generator
+* show examples using ES6 generator - DONE
 * show examples using iframe - DONE
 * show examples using control characters
 * show examples using modal - DONE
