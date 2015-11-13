@@ -1,6 +1,9 @@
 # CHANGELOG
 
 
+## v1.3.7 (2015-11-13)
+* updatad modal example using 2 methods - modal1.js
+
 ## v1.3.6 (2015-11-04)
 * added selectbox example - selectbox1.js
 

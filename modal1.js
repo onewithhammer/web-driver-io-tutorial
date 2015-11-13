@@ -1,6 +1,6 @@
 // modal1.js
 //
-// This is a simple test script that shows how to use multiple iframes on a page.
+// This is a simple test script that shows how to interact with a modal (bootstrap) using 2 methods (ID/Xpath)
 // It does the following:
 //  open a website (parent)
 //  validate title
@@ -50,7 +50,9 @@ describe('Modal Test for Web Driver IO - Tutorial Test Page Website', function()
       });
   });
 
-  it('should verify text from modal body and click Close button', function () {
+
+  // easy method - use ID selector
+  it('should verify text from modal body and click Close button (easy)', function () {
     return driver
       //  click button by id
       .click("#modalbutton").then (function () {
@@ -65,6 +67,35 @@ describe('Modal Test for Web Driver IO - Tutorial Test Page Website', function()
       // click the close button
       .click("#closebutton").then (function () {
         console.log('Clicked Close button in modal');
+      });
+  });
+
+  it('should contain Copyright text', function () {
+    return driver
+      // wait for modal to close and parent to be visual
+      .waitForVisible("#copyright", 5000)
+      .getText("#copyright").then(function (link) {
+        console.log('Copyright found: ' + link);
+        (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
+      });
+  });
+
+  // harder method - use xpath 
+  it('should verify text from modal body and click (X) button', function () {
+    return driver
+      // click button by id
+      .click("#modalbutton").then (function () {
+        console.log('Clicked modal button');
+      })
+      // wait for modal to be visable
+      .waitForVisible("#myModal", 5000)
+      .getText("//div[@class='modal-body']").then(function (text) {
+        console.log('Text found: ' + text);
+        (text).should.equal("I agree to the following...");
+      })
+      // click the X close button
+      .click("//button[@class='close']").then (function () {
+        console.log('Clicked (X) button in modal');
       });
   });
 
