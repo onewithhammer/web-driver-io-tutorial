@@ -1,4 +1,4 @@
-// copyright1.js
+// copyright1-ES6.js
 //
 // This is a simple test script using ES6 Generators does the following:
 //  open a website
