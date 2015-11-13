@@ -101,7 +101,9 @@ Configuration Files:
 
 | Filename | Description |
 | :--|:--|
-| wdio.conf-gruntfile.js | Example wdio config with 3 browser/OS configs against saucelabs
+| wdio.conf-tutorial1-ES6.js | WDIO config file for ES6 test script: tutorial1-ES6.js
+| wdio.conf-copyright1-ES6.js | WDIO config file for ES6 test script: copyright1-ES6.js
+| wdio.conf-gruntfile.js | WDIO config with 3 browser/OS configs against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
 | Gruntfile.js | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
@@ -187,7 +189,7 @@ $ wdio [config-filename]
 ```
 
 ```
-$ wdio wdio-conf.dataLoopExample2.js
+$ wdio wdio.conf-dataLoopExample2.js
 ```
 
 Run on saucelabs a single test using mocha as framework and wdio as the runner on 2 OS/browsers:<br>
@@ -197,7 +199,20 @@ $ wdio [config-filename]
 ```
 
 ```
-$ wdio wdio-conf-saucelabs.dataLoopExample2.js
+$ wdio wdio.conf-saucelabs-dataLoopExample2.js
+```
+
+## RUN ES6 TESTS
+
+NOTE: mocha does not support ES6.  You must use wdio to run ES6 test scripts.
+
+
+```
+$ wdio wdio.conf-tutorial1-ES6.js
+```
+
+```
+$ wdio wdio.conf-copyright1-ES6.js
 ```
 
 ## TEST REST APIs
