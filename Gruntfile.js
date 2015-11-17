@@ -5,6 +5,8 @@
 // To Run:
 //  $ grunt webdriver
 
+// Note: The grunt-webdriver plug calls wdio as the runner.
+
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
