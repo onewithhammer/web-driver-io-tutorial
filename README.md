@@ -45,11 +45,11 @@ Use Technologies That:
 List of technologies I choose:
 
 * mocha – test framework and executes the test scripts (runner)
-* shouldjs – assertion library
+* shouldjs –  expressive, readable, assertion library (test if something is true)
 * webdriverio – browser control bindings (JS language bindings to communicate with Selenium)
 * selenium – browser abstraction and running factory
 * grunt - javascript task runner (used as test runner for cloud based testing platform)
-* grunt-webdriver - grunt plugin for webdriver
+* grunt-webdriver - grunt plugin for webdriver (uses wdio as test runner)
 * wdio - test runner
 * Browser/Mobile drivers + browsers 
 	* Firefox (Browser only)
