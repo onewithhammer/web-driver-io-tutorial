@@ -1,6 +1,6 @@
 // copyright1-ES6.js
 //
-// This is a simple test script using ES6 Generators does the following:
+// This is a simple test script using ES6 Generator does the following:
 //  open a website
 //  validate title
 //  verify copyright text
@@ -27,7 +27,7 @@ describe('Copyright Test using ES6 Generator for Web Driver IO - Tutorial Test P
     if(typeof browser === "undefined") {
       done(new Error('Use WDIO as runner: wdio wdio.conf-copyright1-ES6.js'));
     } else {
-      // grunt will load the browser driver
+      // wdio will load the browser driver
       driver = browser;
       done();
     }
