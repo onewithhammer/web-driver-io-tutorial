@@ -3,7 +3,7 @@
 // This grunt configuration can be run locally or from Travis CL
 
 // To Run:
-//  $ grunt webdriver or wdio wdio.conf-gruntfile.js
+//  $ grunt webdriver or $wdio wdio.conf-gruntfile.js
 
 exports.config = {
 
