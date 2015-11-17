@@ -1,6 +1,10 @@
 # CHANGELOG
 
 
+## v1.3.9 (2015-11-16)
+* added ES6 examples
+	* dataLoopExample2-ES6.js & wdio.conf-dataLoopExample2-ES6.js
+
 ## v1.3.8 (2015-11-13)
 * added ES6 examples
 	* tutorial1-ES6.js & wdio.conf-tutorial1-ES6.js

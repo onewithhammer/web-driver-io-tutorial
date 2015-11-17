@@ -44,7 +44,7 @@ Use Technologies That:
 
 List of technologies I choose:
 
-* mocha – test framework and executes the test scripts (runner)
+* mocha – test framework and executes the test scripts (test runner)
 * shouldjs –  expressive, readable, assertion library (test if something is true)
 * webdriverio – browser control bindings (JS language bindings to communicate with Selenium)
 * selenium – browser abstraction and running factory
@@ -82,6 +82,7 @@ Tutorial Files:
 | commonLib.js | Example of Reusable Functions (library)
 | dataLoopExample1.js | Looping Static Data to Validate URL Link/Text
 | dataLoopExample2.js | Looping Static Data to Populate Form Fields
+| dataLoopExample2-ES6.js | Looping Static Data to Populate Form Fields using ES6 Generator
 | linkTextURL2.js | Link Text/URL Test By Looping Through Elements
 | cssValidation1.js | Example how to validate several CSS properties
 | dropDownMenu1.js | Example how to validate dropdown menu selections
@@ -103,6 +104,7 @@ Configuration Files:
 | :--|:--|
 | wdio.conf-tutorial1-ES6.js | WDIO config file for ES6 test script: tutorial1-ES6.js
 | wdio.conf-copyright1-ES6.js | WDIO config file for ES6 test script: copyright1-ES6.js
+| wdio.conf-dataLoopExample2-ES6.js | WDIO config file for ES6 test script: dataLoopExample2-ES6.js
 | wdio.conf-gruntfile.js | WDIO config with 3 browser/OS configs against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
@@ -204,7 +206,7 @@ $ wdio wdio.conf-saucelabs-dataLoopExample2.js
 
 ## RUN ES6 TESTS
 
-NOTE: mocha does not support ES6.  You must use wdio to run ES6 test scripts.
+NOTE: Mocha does not support ES6.  You must use wdio to run ES6 test scripts.
 
 
 ```
@@ -213,6 +215,10 @@ $ wdio wdio.conf-tutorial1-ES6.js
 
 ```
 $ wdio wdio.conf-copyright1-ES6.js
+```
+
+```
+$ wdio wdio.conf-dataLoopExample2-ES6.js
 ```
 
 ## TEST REST APIs
