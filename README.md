@@ -61,6 +61,7 @@ List of technologies I choose:
 * supertest - test REST APIs
 * json-server - mock REST API server
 * mongodb + promise-mongo - test database driven testing
+* excel - Simple NodeJS XLSX parser
 
 
 
@@ -114,6 +115,10 @@ Configuration Files:
 | Gruntfile-gruntSaucelabs.js | Gruntfile for gruntSaucelabs.js to run against saucelabs
 
 
+Data Files:
+| Filename | Description |
+| :--|:--|
+| testData1.xlsx | excel spreadsheet with test data
 
 ## TEST
 
