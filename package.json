@@ -38,12 +38,12 @@
     "grunt": "*",
     "grunt-webdriver": "^1.0.0",
     "mocha": "^2.3.0",
-    "kerberos" : "~0.0.17",
     "mongodb": "~1.4",
     "promise-mongo": "*",
     "q": "^2.0.3",
     "should": "^7.1.0",
     "supertest": "*",
+    "excel": "*",
     "webdriverio": "*"
   }
 }
