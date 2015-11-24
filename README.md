@@ -65,7 +65,7 @@ List of technologies I choose:
 
 
 
-Tutorial Files:
+## Tutorial Files
 
 | Filename | Description |
 | :--|:--|
@@ -100,7 +100,7 @@ Tutorial Files:
 | excelDataLoopExample.js | Example how to use excel as a data source for test data
 
 
-Configuration Files:
+## Configuration Files
 
 | Filename | Description |
 | :--|:--|
@@ -115,7 +115,7 @@ Configuration Files:
 | Gruntfile-gruntSaucelabs.js | Gruntfile for gruntSaucelabs.js to run against saucelabs
 
 
-Data Files:
+## Data Files
 
 | Filename | Description |
 | :--|:--|
