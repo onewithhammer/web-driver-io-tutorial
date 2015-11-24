@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## v1.4.0 (2015-11-23)
+* added excel data source example - excelDataLoopExample.js
 
 ## v1.3.9 (2015-11-16)
 * added ES6 examples

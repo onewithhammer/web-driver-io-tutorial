@@ -96,6 +96,7 @@ Tutorial Files:
 | gruntSauceLabs.js | Example how to use grunt + grunt-webdriver + saucelabs
 | restAPIExample1.js | Example how to use supertest to test REST APIs
 | dbDataLoopExample.js | Example how to use database (mongoDB) driven testing
+| excelDataLoopExample.js | Example how to use excel as a data source for test data
 
 
 Configuration Files:
@@ -278,11 +279,12 @@ $ mocha dbDataLoopExample.js
 	* use custom assertions - DONE
 * show examples of screenshots - DONE
 * show example of autocomplete field - DONE
-* show examples using ES6 generator - DONE
-* show examples using iframe - DONE
-* show examples using control characters
-* show examples using modal - DONE
-* show examples of selectbox - DONE
+* show example using ES6 generator - DONE
+* show example using iframe - DONE
+* show example using control characters
+* show example using modal - DONE
+* show example of selectbox - DONE
+* show example using excel as a data source - DONE
 
 ## Change Log
 
