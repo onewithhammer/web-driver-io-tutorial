@@ -34,11 +34,11 @@
     "ES6 Generator"
   ],
   "devDependencies": {
-    "excel": "*",
     "express": "*",
     "grunt": "*",
     "grunt-webdriver": "^1.0.0",
     "mocha": "^2.3.0",
+    "mongodb": "*"
     "promise-mongo": "*",
     "q": "^2.0.3",
     "should": "^7.1.0",
