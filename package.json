@@ -34,6 +34,7 @@
     "ES6 Generator"
   ],
   "devDependencies": {
+    "excel": "*",
     "express": "*",
     "grunt": "*",
     "grunt-webdriver": "^1.0.0",
@@ -43,7 +44,6 @@
     "q": "^2.0.3",
     "should": "^7.1.0",
     "supertest": "*",
-    "excel": "*",
-    "webdriverio": "*"
+    "webdriverio": "^3.3.0"
   }
 }
