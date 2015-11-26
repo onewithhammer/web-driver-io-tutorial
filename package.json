@@ -34,7 +34,6 @@
     "ES6 Generator"
   ],
   "devDependencies": {
-    "express": "*",
     "grunt": "*",
     "grunt-webdriver": "^1.0.0",
     "mocha": "^2.3.0",
