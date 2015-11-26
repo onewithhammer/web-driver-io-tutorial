@@ -42,7 +42,6 @@
     "q": "^2.0.3",
     "should": "^7.1.0",
     "supertest": "*",
-    "excel": "*",
     "webdriverio": "^3.3.0"
   }
 }
