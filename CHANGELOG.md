@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.4.1 (2015-11-27)
+* updated excel data source example using package excel to node-xlsx - excelDataLoopExample.js
+
 ## v1.4.0 (2015-11-23)
 * added excel data source example - excelDataLoopExample.js
 

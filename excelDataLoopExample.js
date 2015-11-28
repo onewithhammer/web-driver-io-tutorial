@@ -10,7 +10,7 @@
 
 var webdriverio = require('webdriverio');
 var should = require('should');
-var parseXlsx = require('excel');
+var xlsx = require('node-xlsx');
 var Q = require('q');
 
 // loopTest()
@@ -47,12 +47,8 @@ var loopTest = function (driver, fname, lname) {
 var getExcelData = function(fname) {
   var deferred = Q.defer();
   // turn into async call
-  parseXlsx(fname, function(err, res) {
-    if (err) { deferred.reject(err); }
-    else {
-      deferred.resolve(res);
-    }
-  });
+  var xlsObject = xlsx.parse(fname);
+  deferred.resolve(xlsObject);
   return deferred.promise;
 };
 
@@ -72,8 +68,8 @@ describe('Loop Test with Excel Data for Web Driver IO - Tutorial Test Page Websi
   it('should process data records - sequentially', function() {
     var loop = Q();
     return getExcelData('testData1.xlsx').then(function(data)  {
-      console.log('Records: ' + data.length);
-      data.forEach(function(d) {
+      console.log('Records: ' + data[0].data.length);
+      data[0].data.forEach(function(d) {
         loop = loop.then(function() {
           // execute the next function after the previous has resolved successfully
           console.log('First: ' + d[0] + ' Last: ' + d[1]);
