@@ -61,8 +61,7 @@ List of technologies I choose:
 * supertest - test REST APIs
 * json-server - mock REST API server
 * mongodb + promise-mongo - test database driven testing
-* excel - Simple NodeJS XLSX parser
-
+* node-xlsx - Excel parser & builder
 
 
 ## Tutorial Files
