@@ -13,6 +13,11 @@
 //  take a screenshot
 //
 
+// To Run:
+//  $ mocha screenShot1.js
+
+// Updated to support version 4 of webdriverio
+
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');
@@ -25,16 +30,16 @@ describe('Screenshot Test for Web Driver IO - Tutorial Test Page Website', funct
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // check for global browser (grunt + grunt-webdriver)
     if(typeof browser === "undefined") {
       // load the driver for browser
       driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
-      driver.init(done);
+      return driver.init();
     } else {
       // grunt will load the browser driver
       driver = browser;
-      done();
+      return;
     }
   });
 
@@ -81,11 +86,11 @@ describe('Screenshot Test for Web Driver IO - Tutorial Test Page Website', funct
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
+	after(function() {
     if(typeof browser === "undefined") {
-      driver.end(done);
+      return driver.end();
     } else {
-      done();
+      return;
     }
   });
 });

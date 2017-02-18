@@ -5,18 +5,19 @@
 //  validate title
 //
 //  Default browser is "firefox"
+//  Make sure correct driver is loaded.
 //  Use the following to dynamically invoke a different browser:
 //
 //  Supported browsers:
-//    IE 8+ (Windows Only)
+//    IE 8+ (Windows Only) - requires driver
 //      SELENIUM_BROWSER=ie mocha <test script file name>
-//    Firefox 10+ (Windows/Max/Linux)
+//    Firefox 10+ (Windows/Mac/Linux) - requires driver
 //      SELENIUM_BROWSER=firefox mocha <test script file name>
-//    Chrome 12+ (Windows/Max/Linux)
+//    Chrome 12+ (Windows/Mac/Linux) - requires driver
 //      SELENIUM_BROWSER=chrome mocha <test script file name>
 //    Opera 12+
 //      SELENIUM_BROWSER=opera mocha <test script file name>
-//    Safari
+//    Safari (Mac Only)
 //      SELENIUM_BROWSER=safari mocha <test script file name>
 //
 //  For Windows use git bash shell:
@@ -39,10 +40,10 @@ describe('Dynamic Browser Test for Web Driver IO - Tutorial Test Page Website', 
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // load the driver for browser
     driver = webdriverio.remote({ desiredCapabilities: {browserName: process.env.SELENIUM_BROWSER || 'firefox'} });
-    driver.init(done);
+    return driver.init();
   });
 
   // a test spec - "specification"
@@ -60,7 +61,7 @@ describe('Dynamic Browser Test for Web Driver IO - Tutorial Test Page Website', 
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
-    driver.end(done);
+	after(function() {
+    return driver.end();
   });
 });

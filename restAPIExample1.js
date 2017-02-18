@@ -85,14 +85,14 @@ describe('Test Example Order System Rest APIs using supertest', function() {
   //    firstname: String,
   //    lastname:  String
   //   }
-  it('Validate Customer #1', function (done) {
+  it('Validate Customer #1', function () {
     app
       .get('/customer/1')
       .set('Accept', 'application/json')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         //  individual assertions
         res.body.should.have.property('firstname').and.be.equal("John");
         res.body.firstname.should.be.instanceOf(String);
@@ -101,22 +101,20 @@ describe('Test Example Order System Rest APIs using supertest', function() {
         res.body.should.have.property('id').and.be.equal(1);
         res.body.id.should.be.instanceOf(Number);
         console.log("Customer #1 Validated");
-        done();
       });
   });
 
-  it('Validate Customer #2', function (done) {
+  it('Validate Customer #2', function () {
     app
       .get('/customer/2')
       .set('Accept', 'application/json')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         // customer assertion - validCustomer()
         res.body.should.have.validCustomer("John", "Doe", 2);
         console.log("Customer #2 Validated");
-        done();
       });
   });
 
@@ -125,33 +123,31 @@ describe('Test Example Order System Rest APIs using supertest', function() {
   //    desc: String,
   //    customerId:  Number
   //   }
-  it('Validate Order #1 for Customer #1', function (done) {
+  it('Validate Order #1 for Customer #1', function () {
     app
       .get('/order?customerId=1')
       .set('Accept', 'application/json')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         // customer assertion - validOrder()
         res.body[0].should.have.validOrder("First order", 1);
         console.log("Order #1 for Customer #1 Validated");
-        done();
       });
   });
 
-  it('Validate Order #1 for Customer #2', function (done) {
+  it('Validate Order #1 for Customer #2', function () {
     app
       .get('/order?customerId=2')
       .set('Accept', 'application/json')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         // customer assertion - validOrder()
         res.body[0].should.have.validOrder("Repeat Customer", 2);
         console.log("Order #1 for Customer #2 Validated");
-        done();
       });
   });
 
@@ -161,43 +157,41 @@ describe('Test Example Order System Rest APIs using supertest', function() {
   //    orderId:  Number
   //   }
 
-  it('Validate Items in Order #1 for Customer #1', function (done) {
+  it('Validate Items in Order #1 for Customer #1', function () {
     app
       .get('/item?orderId=1')
       .set('Accept', 'application/json')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Found items for order #1, customer #1");
         res.body.should.be.instanceof(Array).and.have.lengthOf(3);
         res.body[0].should.have.validItem("Bike", 1);
         res.body[1].should.have.validItem("Gas", 1);
         res.body[2].should.have.validItem("Car", 1);
         console.log("Items for Order #1 for Customer #1 Validated");
-        done();
       });
   });
 
-  it('Validate Items in Order #1 for Customer #2', function (done) {
+  it('Validate Items in Order #1 for Customer #2', function () {
     app
       .get('/item?orderId=2')
       .set('Accept', 'application/json')
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Found items for order #1, customer #2");
         res.body.should.be.instanceof(Array).and.have.lengthOf(3);
         res.body[0].should.have.validItem("Table", 2);
         res.body[1].should.have.validItem("Chairs", 2);
         res.body[2].should.have.validItem("Dishes", 2);
         console.log("Items for Order #1 for Customer #2 Validated");
-        done();
       });
   });
 
-  it('Create New Customer #3', function (done) {
+  it('Create New Customer #3', function () {
 
     var cust = { firstname : 'Jane', lastname : 'Doe'};
     app
@@ -207,14 +201,13 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(201)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         res.body.should.have.validCustomer("Jane", "Doe", 3);
         console.log("New Customer #3 Created");
-        done();
       });
   });
 
- it('Create New Order #1 for Customer #3', function (done) {
+ it('Create New Order #1 for Customer #3', function () {
     var order = { desc : 'Business Order', customerId : 3};
     app
       .post('/order')
@@ -223,14 +216,13 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(201)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         res.body.should.have.validOrder("Business Order", 3);
         console.log("New Order #1 for Customer #3 Created");
-        done();
       });
   });
 
-  it('Create 2 New Items for Order #1 for Customer #3', function (done) {
+  it('Create 2 New Items for Order #1 for Customer #3', function () {
 
     var item1 = { desc : 'Books', orderId : 3};
     var item2 = { desc : 'Shelf', orderId : 3};
@@ -242,7 +234,7 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(201)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Added item #1 for order #1, customer #3");
         res.body.should.have.validItem("Books", 3);
       });
@@ -254,14 +246,13 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(201)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Added item #2 for order #1, customer #3");
         res.body.should.have.validItem("Shelf", 3);
-        done();
       });
   });
 
-  it('Delete Items, then Order then Customer all for #3', function (done) {
+  it('Delete Items, then Order then Customer all for #3', function () {
 
     app
       .delete('/item/7')
@@ -269,7 +260,7 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Deleted item #1 for order #1, customer #3");
       });
 
@@ -279,7 +270,7 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Deleted item #2 for order #1, customer #3");
       });
 
@@ -289,7 +280,7 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Deleted order #1, customer #3");
       });
 
@@ -299,9 +290,8 @@ describe('Test Example Order System Rest APIs using supertest', function() {
       .expect(200)
       .expect('Content-Type', /json/)
       .end(function(err, res) {
-        if (err) return done(err);
+        if (err) return err;
         console.log("Deleted ocustomer #3");
-        done();
       });
   });
 });

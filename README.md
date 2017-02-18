@@ -9,7 +9,7 @@ This is the README for the Web Driver IO Tutorial.
 Please see my blog for a complete description of the files and much more
 information located at:
 
-[Blog](http://webdriveriotutorial.blogspot.com/)
+[My Blog](http://webdriveriotutorial.blogspot.com/)
 
 The live working test site for the tutorial is located at:
 
@@ -59,6 +59,7 @@ List of technologies I choose:
 	* Chrome (Browser and driver)
 	* IE (Browser and driver)
 	* Safari (Browser and driver plug-in)
+	* Opera (Browser)
 
 (Not really webdriverio related but very good information)
 * supertest - test REST APIs
@@ -215,23 +216,6 @@ $ wdio [config-filename]
 
 ```
 $ wdio wdio.conf-saucelabs-dataLoopExample2.js
-```
-
-## RUN ES6 TESTS
-
-NOTE: Mocha does not support ES6.  You must use wdio to run ES6 test scripts.
-
-
-```
-$ wdio wdio.conf-tutorial1-ES6.js
-```
-
-```
-$ wdio wdio.conf-copyright1-ES6.js
-```
-
-```
-$ wdio wdio.conf-dataLoopExample2-ES6.js
 ```
 
 ## TEST REST APIs
