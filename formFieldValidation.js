@@ -6,6 +6,11 @@
 //
 //  verifies the form field errors using both local commands and reusable commands.
 
+// To Run:
+//  $ mocha formFieldValidation.js
+
+// Updated to support version 4 of webdriverio
+
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should'),
@@ -20,7 +25,7 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // check for global browser (grunt + grunt-webdriver)
     if(typeof browser === "undefined") {
       // load the driver for browser
@@ -35,7 +40,7 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
    
       driver.addCommand('verifyInvalidStateError', common.verifyInvalidStateError.bind(driver));
 
-      driver.init(done);
+      return driver.init();
     } else {
       // grunt will load the browser driver
       driver = browser;
@@ -49,7 +54,7 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
   
       driver.addCommand('verifyInvalidStateError', common.verifyInvalidStateError.bind(driver));
 
-      done();
+      return;
     }
   });
 
@@ -111,11 +116,11 @@ describe('Form Field Test for Web Driver IO - Tutorial Test Page Website', funct
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
+	after(function() {
     if(typeof browser === "undefined") {
-      driver.end(done);
+      return driver.end();
     } else {
-      done();
+      return;
     }
   });
 });

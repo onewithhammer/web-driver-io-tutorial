@@ -11,6 +11,12 @@
 //  validate text
 //
 
+// To Run:
+//  $ mocha iframe1.js
+
+// Updated to support version 4 of webdriverio
+
+
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');
@@ -23,16 +29,16 @@ describe('Iframe Test for Web Driver IO - Tutorial Test Page Website', function(
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // check for global browser (grunt + grunt-webdriver)
     if(typeof browser === "undefined") {
       // load the driver for browser
       driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
-      driver.init(done);
+      return driver.init();
     } else {
       // grunt will load the browser driver
       driver = browser;
-      done();
+      return;
     }
   });
 
@@ -53,7 +59,7 @@ describe('Iframe Test for Web Driver IO - Tutorial Test Page Website', function(
     // select Iframe
     return driver
       .frame('main')
-      .getText("//div/div/h3").then(function (link) {
+      .getText("//div[@class='jumbotron']/div/h3").then(function (link) {
         (link).should.be.equal("Welcome and Thank You for Visiting tlkeith.com\n\nHome of Tony Keith's Online Professional Resume and Information Site.");
         // uncomment for console debug
         // console.log('Iframe text: ' + link);
@@ -74,11 +80,11 @@ describe('Iframe Test for Web Driver IO - Tutorial Test Page Website', function(
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
+	after(function() {
     if(typeof browser === "undefined") {
-      driver.end(done);
+      driver.end();
     } else {
-      done();
+      return;
     }
   });
 });

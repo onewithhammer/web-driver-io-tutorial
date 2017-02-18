@@ -12,6 +12,12 @@
 //    debug()
 //    getText()
 
+// To Run:
+//  $ mocha debugExample1.js
+
+// Updated to support version 4 of webdriverio
+
+
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');
@@ -24,10 +30,10 @@ describe('Link Test for Web Driver IO - Tutorial Test Page Website', function() 
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // load the driver for browser
     driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
-    driver.init(done);
+    return driver.init();
   });
 
   // a test spec - "specification"
@@ -52,7 +58,7 @@ describe('Link Test for Web Driver IO - Tutorial Test Page Website', function() 
         console.log('Link found: ' + link);
         (link).should.equal("Item 3");
       })
-      // use debug() to stop action to see what is happening on the browser
+      // use debug() to stop action to see what is happening on the browser - press enter to continue
       .debug()
       .click("//ul[@id='mylist']/li[3]/div/div/a").then (function () {
         console.log('Link clicked');
@@ -64,7 +70,7 @@ describe('Link Test for Web Driver IO - Tutorial Test Page Website', function() 
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
-    driver.end(done);
+	after(function() {
+    return driver.end();
   });
 });

@@ -14,6 +14,10 @@
 	* formFillSubmit1.js
 	* modal1.js
 	* selectbox1.js
+	* debugExample1.js
+	* iframe1.js
+	* dropDownMenu1.js
+	* formFieldValidation.js
 * removed examples that supported ES6
   * tutorial1-ES6.js
   * wdio.conf-tutorial1-ES6.js

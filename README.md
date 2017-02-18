@@ -79,7 +79,7 @@ List of technologies I choose:
 | dynamicBrowser.js | Dynamically Invoke Different Browsers
 | callbackPromise.js | Compares callbacks VS promises
 | debugExample1.js  | Example Shows Several Methods on How to Debug
-| formFieldValidation.js | Example of Validating Form Field Errors
+| formFieldValidation.js | Example of Validating Form Field Errors With Both Local Commands and Reusable Commands (commonLib.js)
 | commonLib.js | Example of Reusable Functions (library)
 | dataLoopExample1.js | Looping Static Data to Validate URL Link/Text
 | dataLoopExample2.js | Looping Static Data to Populate Form Fields
@@ -129,17 +129,16 @@ Go to http://www.seleniumhq.org/download/<br>
 Download jar file (3.0.1 latest at this time)<br>
 Save/move into the “selenium” directory.<br>
 
-Start the Selenium Stand Alone Server:
+Start the Selenium Stand Alone Server (terminal):
 
 ```
  $ java -jar selenium-server-standalone-3.0.1.jar
 ```
 
-Firefox<br>
+Firefox:
 Install firefox browser, if not already installed.
 
-Firefox driver (GeckoDriver)<br>
-
+Firefox driver (GeckoDriver):
 Go to https://github.com/mozilla/geckodriver/releases
 Download latest driver
 untar
