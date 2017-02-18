@@ -35,8 +35,8 @@ describe('Title Test for Web Driver IO - Tutorial Test Page Website', function()
     }
   });
 
-  // a test spec - "specification" - asynchonous old method
-  it('should be load correct page and title - async', function () {
+  // a test spec - "specification" - with "then"
+  it('should be load correct page and title', function () {
     // load page, then call function()
     return driver
       .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
@@ -46,8 +46,8 @@ describe('Title Test for Web Driver IO - Tutorial Test Page Website', function()
         (title).should.be.equal("Web Driver IO - Tutorial Test Page");
         // uncomment for console debug
         // console.log('Current Page Title: ' + title);
-      });
-  });
+     });
+ });
 
   // a "hook" to run after all tests in this block
 	after(function() {

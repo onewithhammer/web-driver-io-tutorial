@@ -22,6 +22,8 @@
 // then run script
 // $ mocha restAPIExample1.js
 
+// Updated to support version 4 of webdriverio
+
 // use a tool like postman to view the data before and after the script is ran.
 //
 // URLs:

@@ -20,6 +20,12 @@
 	* formFieldValidation.js
 	* restAPIExample1.js
 	* screenShot1.js
+	* callbackPromise.js
+* added examples
+  * tutorial1-wdio.js
+  * wdio.conf-tutorial1.js
+  * copyright1-wdio.js
+  * wdio-conf-copyright1.js
 * removed examples that supported ES6
   * tutorial1-ES6.js
   * wdio.conf-tutorial1-ES6.js

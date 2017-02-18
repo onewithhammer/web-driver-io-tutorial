@@ -73,6 +73,7 @@ List of technologies I choose:
 | Filename | Description |
 | :--|:--|
 | tutorial1.js | Title Test - Open page and verify title
+| tutorial1-wdio.js - Title Test - Open page and verify title using WDIO
 | linkTextURL1.js | Link Text/URL Test - Verify Link Text and URL
 | copyright1.js | Copyright Test - Verify Copyright Text
 | formFillSubmit1.js | Populate Form Fields and Submit
@@ -104,6 +105,7 @@ List of technologies I choose:
 
 | Filename | Description |
 | :--|:--|
+| wdio.conf-tutorial1.js | WDIO config for tutorial1-wdio.js using Firefox
 | wdio.conf-gruntfile.js | WDIO config with 3 browser/OS configs against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)

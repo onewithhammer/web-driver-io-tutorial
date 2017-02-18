@@ -19,16 +19,16 @@ describe('Callback vs Promise Test for Web Driver IO - Tutorial Test Page Websit
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // check for global browser (grunt + grunt-webdriver)
     if(typeof browser === "undefined") {
       // load the driver for browser
       driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
-      driver.init(done);
+      return driver.init();
     } else {
       // grunt will load the browser driver
       driver = browser;
-      done();
+      return;
     }
   });
 
@@ -61,7 +61,7 @@ describe('Callback vs Promise Test for Web Driver IO - Tutorial Test Page Websit
   });
 
   // Set/verify first/last name using Callbacks
-  it('should set/verify first/last name using Callbacks', function (done) {
+  it('should set/verify first/last name using Callbacks', function () {
     driver.setValue("#fname", "Tony", function (e) {
       driver.getValue("#fname", function (err, e) {
         (e).should.be.equal("Tony");
@@ -71,7 +71,6 @@ describe('Callback vs Promise Test for Web Driver IO - Tutorial Test Page Websit
           driver.getValue("#lname", function (err, e) {
             (e).should.be.equal("Keith");
             console.log("Last Name: " + e);
-            done();
           });
         });
       });
@@ -79,7 +78,7 @@ describe('Callback vs Promise Test for Web Driver IO - Tutorial Test Page Websit
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
-    driver.end(done);
+	after(function() {
+    return driver.end();
   });
 });

@@ -43,6 +43,7 @@
     "q": "^2.0.3",
     "should": "^7.1.0",
     "supertest": "*",
+    "wdio-mocha-framework": "^0.5.8",
     "webdriverio": "^4.0.7"
   }
 }
