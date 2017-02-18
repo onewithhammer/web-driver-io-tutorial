@@ -128,7 +128,8 @@ $ mkdir selenium
 Install Selenium Stand Alone Server:<br>
 Go to http://www.seleniumhq.org/download/<br>
 Download jar file (3.0.1 latest at this time)<br>
-Save/move into the “selenium” directory.<br>
+Save/move into the “selenium” directory<br>
+Add "selenium" directory to PATH<br>
 
 Start the Selenium Stand Alone Server (terminal):
 
@@ -146,7 +147,7 @@ untar<br>
 ```
 $ tar -xvf <drivername>
 ```
-Move to directory in PATH   
+Save/move to "selenium" directory  
 
 
 ```
