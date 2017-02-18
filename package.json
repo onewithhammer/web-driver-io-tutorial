@@ -1,6 +1,6 @@
 {
   "name": "web-driver-io-tutorial",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "WebDriverIO Tutorial with working web site and examples",
   "author": "Tony Keith <tony.keith@yahoo.com>",
   "homepage": "http://tlkeith.com/WebDriverIOTutorialTest.html",
@@ -35,14 +35,14 @@
   ],
   "devDependencies": {
     "grunt": "*",
-    "grunt-webdriver": "^1.0.0",
-    "mocha": "^2.3.0",
+    "grunt-webdriver": "^2.0.0",
+    "mocha": "^2.4.5",
     "mongodb": "*",
+    "node-xlsx": "*",
     "promise-mongo": "*",
     "q": "^2.0.3",
     "should": "^7.1.0",
     "supertest": "*",
-    "node-xlsx": "*",
-    "webdriverio": "^3.3.0"
+    "webdriverio": "^4.0.7"
   }
 }

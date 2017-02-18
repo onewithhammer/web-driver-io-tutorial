@@ -6,6 +6,12 @@
 //  verify copyright text
 //
 
+
+// To Run:
+//  $ mocha copyright1.js
+
+// Updated to support version >4 of webdriverio 
+
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');
@@ -18,16 +24,16 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // check for global browser (grunt + grunt-webdriver)
     if(typeof browser === "undefined") {
       // load the driver for browser
       driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
-      driver.init(done);
+      return driver.init();
     } else {
       // grunt will load the browser driver
       driver = browser;
-      done();
+      return;
     }
   });
 
@@ -35,7 +41,7 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
   it('should be load correct page and title', function () {
     // load page, then call function()
     return driver
-      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html').then()
+      .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
       // get title, then pass title to function()
       .getTitle().then(function (title) {
         // verify title
@@ -50,7 +56,7 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
     return driver
       .getText("#copyright").then(function (link) {
         console.log('Copyright found: ' + link);
-        (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
+        (link).should.equal("Tony Keith - tlkeith.com @ 2015-2017 - All rights reserved.");
       });
   });
 
@@ -60,16 +66,16 @@ describe('Copyright Test for Web Driver IO - Tutorial Test Page Website', functi
       // use p[1] since there more than on <p> tag
       .getText("//footer/center/p[1]").then(function (link) {
         console.log('Copyright found: ' + link);
-        (link).should.equal("Tony Keith - tlkeith.com @ 2015 - All rights reserved.");
+        (link).should.equal("Tony Keith - tlkeith.com @ 2015-2017 - All rights reserved.");
       });
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
+	after(function() {
     if(typeof browser === "undefined") {
-      driver.end(done);
+      return driver.end();
     } else {
-      done();
+      return;
     }
   });
 });

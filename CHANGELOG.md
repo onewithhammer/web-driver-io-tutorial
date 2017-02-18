@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v1.5.0 (2017-02-18)
+* updated examples to support version >4 webdriverio
+	* tutorial1.js
+	* copyright1.js
+	* autoComplete1.js
+	* carouselExample1.js
+	* cssValidation1.js
+	* dataLoopExample1.js
+	* dataLoopExample2.js
+	* linkTextURL1.js
+	* linkTextURL2.js
+	* formFillSubmit1.js
+	* modal1.js
+	* selectbox1.js
+* removed examples that supported ES6
+  * tutorial1-ES6.js
+  * wdio.conf-tutorial1-ES6.js
+  * copyright1-ES6.js	
+  * wdio.conf-copyright1-ES6.js
+  * dataLoopExample2-ES6.js		
+  * wdio.conf-dataLoopExample2-ES6.js	
+
 ## v1.4.1 (2015-11-27)
 * updated excel data source example using package excel to node-xlsx - excelDataLoopExample.js
 

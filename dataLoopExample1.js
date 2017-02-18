@@ -9,6 +9,13 @@
 //  validates page with many links
 //  each link is validated and the link is loaded
 
+
+// To Run:
+//  $ mocha dataLoopExample1.js
+
+// Updated to support version >4 of webdriverio 
+
+
 // required libraries
 var webdriverio = require('webdriverio'),
   should = require('should');
@@ -46,16 +53,16 @@ var linkArray = [
   var driver = {};
 
   // hook to run before tests
-  before( function (done) {
+  before( function () {
     // check for global browser (grunt + grunt-webdriver)
     if(typeof browser === "undefined") {
       // load the driver for browser
       driver = webdriverio.remote({ desiredCapabilities: {browserName: 'firefox'} });
-      driver.init(done);
+      return driver.init();
     } else {
       // grunt will load the browser driver
       driver = browser;
-      done();
+      return;
     }
   });
 
@@ -75,7 +82,7 @@ var linkArray = [
 
   // loop through each linkArray 
   linkArray.forEach(function(d) {
-    it('should contain text/link then goto page - ' + d.name, function() {
+    it('should contain text/link then goto page - ' + d.name, function () {
       return driver
       // make sure you are on the starting page
       .url('http://www.tlkeith.com/WebDriverIOTutorialTest.html')
@@ -97,11 +104,11 @@ var linkArray = [
   });
 
   // a "hook" to run after all tests in this block
-	after(function(done) {
+	after(function() {
     if(typeof browser === "undefined") {
-      driver.end(done);
+      return driver.end();
     } else {
-      done();
+      return;
     }
   });
 });

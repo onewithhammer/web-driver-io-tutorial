@@ -16,6 +16,9 @@ The live working test site for the tutorial is located at:
 [Working Test Site](http://tlkeith.com/WebDriverIOTutorialTest.html)
 
 
+This project was updated to support version 4 of webdriverio
+
+
 ## Background
 
 I recently had an interesting challenge presented to me. I needed to introduce automated testing to a Q/A department with very little technical experience and no programming experience. 
@@ -52,7 +55,7 @@ List of technologies I choose:
 * grunt-webdriver - grunt plugin for webdriver (uses wdio as test runner)
 * wdio - test runner
 * Browser/Mobile drivers + browsers 
-	* Firefox (Browser only)
+	* Firefox (Browser and driver)
 	* Chrome (Browser and driver)
 	* IE (Browser and driver)
 	* Safari (Browser and driver plug-in)
@@ -129,13 +132,13 @@ $ mkdir selenium
 ```
 Install Selenium Stand Alone Server:<br>
 Go to http://www.seleniumhq.org/download/<br>
-Download jar file (2.48.2 latest at this time)<br>
+Download jar file (3.0.1 latest at this time)<br>
 Save/move into the “selenium” directory.<br>
 
 Start the Selenium Stand Alone Server:
 
 ```
- $ java -jar selenium-server-standalone-2.48.2.jar
+ $ java -jar selenium-server-standalone-3.0.1.jar
 ```
 
 Firefox<br>
@@ -290,6 +293,10 @@ $ mocha dbDataLoopExample.js
 * show example using modal - DONE
 * show example of selectbox - DONE
 * show example using excel as a data source - DONE
+* show example using custom reporter
+* show example using page object
+* Update examples to use old async method and V4 - NA
+* Write examples of all using sync method and V4 - IN PROGRESS
 
 ## Change Log
 
@@ -297,7 +304,7 @@ see the [CHANGELOG](https://github.com/onewithhammer/web-driver-io-tutorial/blob
 
 
 ## License
-MIT © 2015 Tony Keith <tony.keith@yahoo.com> [WEBSITE](http://www.tlkeith.com)
+MIT © 2015-2017 Tony Keith <tony.keith@yahoo.com> [WEBSITE](http://www.tlkeith.com)
 
 
 
