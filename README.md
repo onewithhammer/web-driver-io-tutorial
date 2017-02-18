@@ -136,13 +136,13 @@ Start the Selenium Stand Alone Server (terminal):
  $ java -jar selenium-server-standalone-3.0.1.jar
 ```
 
-Firefox:
+Firefox:<br>
 Install firefox browser, if not already installed.
 
-Firefox driver (GeckoDriver):
-Go to https://github.com/mozilla/geckodriver/releases
-Download latest driver
-untar
+Firefox driver (GeckoDriver):<br>
+Go to https://github.com/mozilla/geckodriver/releases<br>
+Download latest driver<br>
+untar<br>
 ```
 $ tar -xvf <drivername>
 ```
