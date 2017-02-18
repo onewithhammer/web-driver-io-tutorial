@@ -72,10 +72,8 @@ List of technologies I choose:
 | Filename | Description |
 | :--|:--|
 | tutorial1.js | Title Test - Open page and verify title
-| tutorial1-ES6.js | Title Test - Open page and verify title using ES6 Generator
 | linkTextURL1.js | Link Text/URL Test - Verify Link Text and URL
 | copyright1.js | Copyright Test - Verify Copyright Text
-| copyright1-ES6.js | Copyright Test - Verify Copyright Text using ES6 Generator
 | formFillSubmit1.js | Populate Form Fields and Submit
 | showHideVerify1.js | Click Show/Hide Button and Verify Text
 | dynamicBrowser.js | Dynamically Invoke Different Browsers
@@ -85,7 +83,6 @@ List of technologies I choose:
 | commonLib.js | Example of Reusable Functions (library)
 | dataLoopExample1.js | Looping Static Data to Validate URL Link/Text
 | dataLoopExample2.js | Looping Static Data to Populate Form Fields
-| dataLoopExample2-ES6.js | Looping Static Data to Populate Form Fields using ES6 Generator
 | linkTextURL2.js | Link Text/URL Test By Looping Through Elements
 | cssValidation1.js | Example how to validate several CSS properties
 | dropDownMenu1.js | Example how to validate dropdown menu selections
@@ -106,9 +103,6 @@ List of technologies I choose:
 
 | Filename | Description |
 | :--|:--|
-| wdio.conf-tutorial1-ES6.js | WDIO config file for ES6 test script: tutorial1-ES6.js
-| wdio.conf-copyright1-ES6.js | WDIO config file for ES6 test script: copyright1-ES6.js
-| wdio.conf-dataLoopExample2-ES6.js | WDIO config file for ES6 test script: dataLoopExample2-ES6.js
 | wdio.conf-gruntfile.js | WDIO config with 3 browser/OS configs against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
@@ -143,6 +137,17 @@ Start the Selenium Stand Alone Server:
 
 Firefox<br>
 Install firefox browser, if not already installed.
+
+Firefox driver (GeckoDriver)<br>
+
+Go to https://github.com/mozilla/geckodriver/releases
+Download latest driver
+untar
+```
+$ tar -xvf <drivername>
+```
+Move to directory in PATH   
+
 
 ```
 $ git clone https://github.com/onewithhammer/WebDriverIOTutorial.git
