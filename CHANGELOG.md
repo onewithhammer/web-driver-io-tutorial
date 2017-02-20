@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v1.5.0 (2017-02-18)
+## v1.5.0 (2017-02-19)
 * updated examples to support version >4 webdriverio
 	* tutorial1.js
 	* copyright1.js
@@ -26,6 +26,9 @@
   * wdio.conf-tutorial1.js
   * copyright1-wdio.js
   * wdio-conf-copyright1.js
+  * pageOjectExample1.js
+  * pageobjects/web-page.js
+  * pageobjects/page.js
 * removed examples that supported ES6
   * tutorial1-ES6.js
   * wdio.conf-tutorial1-ES6.js

@@ -76,15 +76,18 @@ List of technologies I choose:
 | tutorial1-wdio.js - Title Test - Open page and verify title using WDIO
 | linkTextURL1.js | Link Text/URL Test - Verify Link Text and URL
 | copyright1.js | Copyright Test - Verify Copyright Text
+| copyright1-wdio.js | Copyright Test - Verify Copyright Text using WDIO
 | formFillSubmit1.js | Populate Form Fields and Submit
 | showHideVerify1.js | Click Show/Hide Button and Verify Text
 | dynamicBrowser.js | Dynamically Invoke Different Browsers
 | callbackPromise.js | Compares callbacks VS promises
 | debugExample1.js  | Example Shows Several Methods on How to Debug
 | formFieldValidation.js | Example of Validating Form Field Errors With Both Local Commands and Reusable Commands (commonLib.js)
-| commonLib.js | Example of Reusable Functions (library)
+| common/commonLib.js | Example of Reusable Functions (library)
 | dataLoopExample1.js | Looping Static Data to Validate URL Link/Text
 | dataLoopExample2.js | Looping Static Data to Populate Form Fields
+| pageObjectExample1.js | Example how to use page objects
+| pageobjects/web-page.js | Example of page objects
 | linkTextURL2.js | Link Text/URL Test By Looping Through Elements
 | cssValidation1.js | Example how to validate several CSS properties
 | dropDownMenu1.js | Example how to validate dropdown menu selections
@@ -106,6 +109,8 @@ List of technologies I choose:
 | Filename | Description |
 | :--|:--|
 | wdio.conf-tutorial1.js | WDIO config for tutorial1-wdio.js using Firefox
+| wdio.conf-copyright1.js | WDIO config for copyright1-wdio.js using Firefox
+| wdio.conf-pObjEx1.js | WDio config for pageObjectExample1.js using Firefox
 | wdio.conf-gruntfile.js | WDIO config with 3 browser/OS configs against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
 | wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
