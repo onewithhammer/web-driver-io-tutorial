@@ -31,7 +31,7 @@ exports.config = {
     // file.
     //
     specs: [
-        'dataLoopExample2.js'
+        'dataLoopExample2-wdio.js'
     ],
     // Patterns to exclude.
     exclude: [
