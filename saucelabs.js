@@ -17,8 +17,8 @@ var webdriverio = require('webdriverio'),
 // a test script block or suite
 describe('Saucelabs Test for Web Driver IO - Tutorial Test Page Website', function() {
 
-  // set timeout to 10 seconds
-	this.timeout(9999999);
+  // set timeout to 20 seconds
+  this.timeout(20000);
   var driver = {};
 
   // hook to run before tests
@@ -30,7 +30,7 @@ describe('Saucelabs Test for Web Driver IO - Tutorial Test Page Website', functi
             version: '50.0',
             platform: 'Windows 8',
             tags: ['saucelabs'],
-            name: 'This is an example test script using saucelabs w Mocha as runner',
+            name: 'Example test script using saucelabs w Mocha as framework + runner',
         },
         host: 'ondemand.saucelabs.com',
         port: 80,
