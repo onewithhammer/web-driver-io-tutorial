@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v1.5.0 (2017-02-19)
+## v1.5.0 (2017-02-20)
 * updated examples to support version >4 webdriverio
 	* tutorial1.js
 	* copyright1.js
@@ -21,6 +21,7 @@
 	* restAPIExample1.js
 	* screenShot1.js
 	* callbackPromise.js
+	* saucelabs.js
 * added examples
   * tutorial1-wdio.js
   * wdio.conf-tutorial1.js
@@ -35,7 +36,8 @@
   * copyright1-ES6.js	
   * wdio.conf-copyright1-ES6.js
   * dataLoopExample2-ES6.js		
-  * wdio.conf-dataLoopExample2-ES6.js	
+  * wdio.conf-dataLoopExample2-ES6.js
+* more configuration files for wdio	
 
 ## v1.4.1 (2015-11-27)
 * updated excel data source example using package excel to node-xlsx - excelDataLoopExample.js
