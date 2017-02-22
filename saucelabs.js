@@ -5,6 +5,9 @@
 //  validate title
 //
 // To run:
+// setup environment with SAUCE_USERNAME & SAUCE_ACCESS_KEY
+// export SAUCE_USERNAME="username"
+// export SAUCE_ACCESS_KEY="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
 //  $ mocha saucelabs.js
 
 // required libraries
@@ -34,8 +37,9 @@ describe('Saucelabs Test for Web Driver IO - Tutorial Test Page Website', functi
         user: process.env.SAUCE_USERNAME,
         key: process.env.SAUCE_ACCESS_KEY,
         updateJob: true,
-        logLevel: 'verbose'})
-      .init();
+        logLevel: 'verbose'
+      });
+      return driver.init();
   });
 
   // a test spec - "specification"
@@ -54,6 +58,6 @@ describe('Saucelabs Test for Web Driver IO - Tutorial Test Page Website', functi
 
   // a "hook" to run after all tests in this block
 	after(function() {
-    driver.end();
+    return driver.end();
   });
 });
