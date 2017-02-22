@@ -1,5 +1,7 @@
 // pageObjectExample1.js
 
+// This is a simple page object example.
+
 // To Run:
 //  $ wdio wdio.conf-pObjEx1.js
 
@@ -39,6 +41,5 @@ describe('Page Object Example #1 for Web Driver IO - Tutorial Test Page Website'
 
     var rs = WebPage.getResults();
     (rs).should.equal("Welcome " + "John" + " " + "Doe" + ".");
-
 	});
 });
