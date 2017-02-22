@@ -1,9 +1,9 @@
-// WDIO config file for dataLoopExample2.js on two different browsers (locally)
+// WDIO config file for dataLoopExample2-wdio.js on two different browsers (locally)
 //
 // You must have Firefox and Chrome installed for this script to run properly
 //
 // To Run:
-//  $ wdio wdio.conf-dataLoopExample2.js or $ grunt --gruntfile Gruntfile-dataLoopExample2.js webdriver
+//  $ wdio wdio.conf-dataLoopExample2.js
 
 exports.config = {
     
@@ -15,7 +15,7 @@ exports.config = {
     // file.
     //
     specs: [
-        'dataLoopExample2.js'
+        'dataLoopExample2-wdio.js'
     ],
     // Patterns to exclude.
     exclude: [
