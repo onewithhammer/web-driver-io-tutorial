@@ -73,7 +73,7 @@ List of technologies I choose:
 | Filename | Description |
 | :--|:--|
 | tutorial1.js | Title Test - Open page and verify title
-| tutorial1-wdio.js - Title Test - Open page and verify title using WDIO
+| tutorial1-wdio.js | Title Test - Open page and verify title using WDIO
 | linkTextURL1.js | Link Text/URL Test - Verify Link Text and URL
 | copyright1.js | Copyright Test - Verify Copyright Text
 | copyright1-wdio.js | Copyright Test - Verify Copyright Text using WDIO
@@ -102,6 +102,9 @@ List of technologies I choose:
 | restAPIExample1.js | Example how to use supertest to test REST APIs
 | dbDataLoopExample.js | Example how to use database (mongoDB) driven testing
 | excelDataLoopExample.js | Example how to use excel as a data source for test data
+| multiWindows1.js | Example how to work with multiple windows
+| multiWindows1-wdio.js | Example how to work with multiple windows using WDIO
+
 
 
 ## Configuration Files
@@ -110,10 +113,11 @@ List of technologies I choose:
 | :--|:--|
 | wdio.conf-tutorial1.js | WDIO config for tutorial1-wdio.js using Firefox
 | wdio.conf-copyright1.js | WDIO config for copyright1-wdio.js using Firefox
-| wdio.conf-pObjEx1.js | WDio config for pageObjectExample1.js using Firefox
+| wdio.conf-pObjEx1.js | WDIO config for pageObjectExample1.js using Firefox
 | wdio.conf-gruntfile.js | WDIO config with 3 browser/OS configs against saucelabs
 | wdio.conf-saucelabs-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different OS/browsers (saucelabs)
-| wdio.conf-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
+| wdio.conf-local-dataLoopExample2.js | WDIO config file for dataLoopExample2.js on two different browsers (locally)
+| wdio.conf-multiWindows1.js | WDIO config for multiWindows1-wdio.js using Firefox
 | Gruntfile.js | Example Gruntfile with grunt-webdriver and 3 browser/OS configs
 | Gruntfile-dataLoopExample2.js | Gruntfile for dataLoopExample2.js to run against saucelabs
 | Gruntfile-gruntSaucelabs.js | Gruntfile for gruntSaucelabs.js to run against saucelabs
@@ -270,27 +274,11 @@ $ mocha dbDataLoopExample.js
 
 ## TO DO
 
-* use WDIO as the test runner - DONE
-  * see wdio config files
-* show example of CI (Travis) - DONE
-	* see .travis.yml file for more details
 * show more should assertion lib examples
   * show examples deepEqual() 
-  * show examples of property() - DONE
-  * show examples of instanceOf() - DONE
-* show chai assertion lib examples
-* show examples of testing REST API - DONE
-	* use custom assertions - DONE
-* show examples of screenshots - DONE
-* show example of autocomplete field - DONE
-* show example using ES6 generator - DONE
-* show example using iframe - DONE
 * show example using control characters
-* show example using modal - DONE
-* show example of selectbox - DONE
-* show example using excel as a data source - DONE
 * show example using custom reporter
-* show example using page object
+* show example using page object - DONE
 * Update examples to use old async method and V4 - NA
 * Write examples of all using sync method and V4 - IN PROGRESS
 
