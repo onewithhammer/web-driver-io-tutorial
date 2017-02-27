@@ -1,7 +1,7 @@
 exports.config = {
     
     specs: [
-        'multiWindows-wdio1.js'
+        'multiWindows1-wdio.js'
     ],
     // Patterns to exclude.
     exclude: [
