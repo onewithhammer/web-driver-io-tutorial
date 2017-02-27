@@ -1,6 +1,15 @@
 // pageObjectExample1.js
 
-// This is a simple page object example.
+// This is a simple page object pattern example that does the following:
+// open page
+// verify copyright
+// fill in search form and submit
+// wait for results on results page
+// verify results
+
+// Page objects are used to provide another layer of abstraction between 
+// the page information and the actual tests.
+
 
 // To Run:
 //  $ wdio wdio.conf-pObjEx1.js
@@ -25,7 +34,7 @@ describe('Page Object Example #1 for Web Driver IO - Tutorial Test Page Website'
 		(cr).should.equal("Tony Keith - tlkeith.com @ 2015-2017 - All rights reserved.");
   });
 
-  it('should fill, submit and verify search form using pageObjects', function () {
+  it('should fill, submit the search form and verfiy results using pageObjects', function () {
 		WebPage.setFirstname("John");
 		var fn = WebPage.getFirstname();
     (fn).should.be.equal("John");
