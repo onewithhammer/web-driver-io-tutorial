@@ -1,8 +1,8 @@
 exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    host: 'ondemand.saucelabs.com',
-    port: 80,
+ //   host: 'ondemand.saucelabs.com',
+ //   port: 80,
     specs: [
         'tutorial1-wdio.js'
     ],
