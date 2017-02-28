@@ -9,13 +9,11 @@ exports.config = {
 
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
-    host: 'localhost',
-    port: 4445,
+    host: 'ondemand.saucelabs.com',
+    port: 80,
 
     specs: [
-        'tutorial1-wdio.js',
-        'copyright1-wdio.js',
-        'dataLoopExample2-wdio.js'
+        'tutorial1-wdio.js'
     ],
     exclude: [
     ],
@@ -26,7 +24,6 @@ exports.config = {
             tags: ['saucelabs'],
             name: 'This is an example using wdio + saucelabs - IE, 10.0, Win7',
             'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
-            name: 'integration',
             build: process.env.TRAVIS_BUILD_NUMBER
         }
     ],
