@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.5.1 (2017-03-01)
+* added new examples
+  * multiWindows1.js
+  * multiWindows1-wdio.js
+* added configuration files for WDIO
+	* wdio.conf-multiWindows1.js
+
 ## v1.5.0 (2017-02-20)
 * updated examples to support version >4 webdriverio
 	* tutorial1.js
