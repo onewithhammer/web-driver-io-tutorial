@@ -1,6 +1,6 @@
 {
   "name": "web-driver-io-tutorial",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "WebDriverIO Tutorial with working web site and examples",
   "author": "Tony Keith <tony.keith@yahoo.com>",
   "homepage": "http://tlkeith.com/WebDriverIOTutorialTest.html",
@@ -10,7 +10,7 @@
     "url": "https://github.com/onewithhammer/web-driver-io-tutorial"
   },
   "scripts": {
-    "test": "wdio wdio.conf-gruntfile.js"
+    "test": "wdio wdio.conf-copyright1.js"
   },
   "keywords": [
     "webdriverio",
@@ -45,6 +45,7 @@
     "supertest": "*",
     "wdio-mocha-framework": "^0.5.8",
     "wdio-sauce-service": "^0.3.1",
+    "wdio-spec-reporter": "0.0.5",
     "webdriverio": "^4.0.7"
   }
 }
