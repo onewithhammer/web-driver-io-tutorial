@@ -5,7 +5,13 @@
 // To Run:
 //  $ wdio wdio.conf-web-driver-io-tutorial.js
 
-var config = {
+exports.config = {
+
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
+    host: 'localhost',
+    port: 4445,
+
     specs: [
         'tutorial1-wdio.js',
         'copyright1-wdio.js',
@@ -13,7 +19,16 @@ var config = {
     ],
     exclude: [
     ],
-    capabilities: [ {}
+    capabilities: [ {
+         browserName: 'internet explorer',
+            version: '10.0',
+            platform: 'Windows 7',
+            tags: ['saucelabs'],
+            name: 'This is an example using wdio + saucelabs - IE, 10.0, Win7',
+            'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+            name: 'integration',
+            build: process.env.TRAVIS_BUILD_NUMBER
+        }
     ],
     sync: true,
     logLevel: 'verbose',
@@ -32,24 +47,3 @@ var config = {
         ui: 'bdd'
     },
 };
-
-// if CI environment setup configuration
-if (process.env.CI) {
-    config.user = process.env.SAUCE_USERNAME;
-    config.key = process.env.SAUCE_ACCESS_KEY;
-    config.host = 'localhost';
-    config.port = 4445;
-
-    
-    config.capabilities.browserName = 'internet explorer';
-    config.capabilities.version = '10.0';
-    config.capabilities.platform =  'Windows 7';
-    config.capabilities.tags[0] = 'saucelabs';
-    config.capabilities.name = 'This is an example using wdio + saucelabs - IE, 10.0, Win7';
-//    config.capabilities.tunnel-identifier = process.env.TRAVIS_JOB_NUMBER;
-    config.capabilities.build = process.env.TRAVIS_BUILD_NUMBER;
-} else {
-    config.capabilities.browserName = 'firefox';
-}
-
-exports.config = config;
