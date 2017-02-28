@@ -10,7 +10,7 @@
     "url": "https://github.com/onewithhammer/web-driver-io-tutorial"
   },
   "scripts": {
-    "test": "wdio wdio.conf-copyright1.js"
+    "test": "wdio wdio.conf-web-driver-io-tutorial.js"
   },
   "keywords": [
     "webdriverio",
