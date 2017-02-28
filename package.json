@@ -10,7 +10,7 @@
     "url": "https://github.com/onewithhammer/web-driver-io-tutorial"
   },
   "scripts": {
-    "test": "wdio wdio.conf-web-driver-io-tutorial.js"
+    "test": "wdio wdio.conf-copyright1.js"
   },
   "keywords": [
     "webdriverio",
@@ -30,8 +30,7 @@
     "http assertion testing",
     "json-server",
     "database driven test data",
-    "Excel driven test data",
-    "ES6 Generator"
+    "Excel driven test data"
   ],
   "devDependencies": {
     "grunt": "*",
