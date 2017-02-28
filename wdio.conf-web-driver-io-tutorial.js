@@ -13,7 +13,7 @@ var config = {
     ],
     exclude: [
     ],
-    capabilities: [ { }
+    capabilities: [ {}
     ],
     sync: true,
     logLevel: 'verbose',
@@ -39,11 +39,15 @@ if (process.env.CI) {
     config.key = process.env.SAUCE_ACCESS_KEY;
     config.host = 'localhost';
     config.port = 4445;
+
+    
     config.capabilities.browserName = 'internet explorer';
     config.capabilities.version = '10.0';
     config.capabilities.platform =  'Windows 7';
     config.capabilities.tags[0] = 'saucelabs';
     config.capabilities.name = 'This is an example using wdio + saucelabs - IE, 10.0, Win7';
+//    config.capabilities.tunnel-identifier = process.env.TRAVIS_JOB_NUMBER;
+    config.capabilities.build = process.env.TRAVIS_BUILD_NUMBER;
 } else {
     config.capabilities.browserName = 'firefox';
 }
